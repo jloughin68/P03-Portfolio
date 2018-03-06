@@ -1,0 +1,30 @@
+@font-face{
+  font-family: 'Roboto';
+  font-weight: lighter;
+  font-style: normal;
+  src: url('../fonts/Roboto-Light.ttf') format('truetype');
+  /* src: url('../fonts/roboto-light-webfont.ttf') format('truetype'),
+       url('../fonts/roboto-light-webfont.woff') format('woff'),
+       url('../fonts/roboto-light-webfont.woff2') format('woff2'); */
+}
+
+@font-face{
+  font-family: 'Roboto';
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: condensed;
+  src: url('../fonts/Roboto-BoldCondensed.ttf') format('truetype');
+  /* src: url('../fonts/Roboto-BoldCondensed.ttf') format('truetype'),
+       url('../fonts/Roboto-BoldCondensed.woff') format('woff'),
+       url('../fonts/Roboto-BoldCondensed.woff2') format('woff2'); */
+}
+
+@font-face{
+  font-family: 'Sunrise International Demo';
+  font-weight: normal;
+  font-style: normal;
+  src: url('../fonts/Sunrise-International.eot');
+  src: url('../fonts/Sunrise-International.ttf') format('truetype'),
+       url('../fonts/Sunrise-International.woff') format('woff'),
+       url('../fonts/Sunrise-International.woff2') format('woff2');
+}

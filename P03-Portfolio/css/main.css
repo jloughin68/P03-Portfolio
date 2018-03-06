@@ -13,18 +13,19 @@ h2 {
   font-family: 'Sunrise International Demo', sans-serif;
   font-weight: normal;
   font-style: normal;
-  font-size: 3.5rem;
+  font-size: 4rem;
   letter-spacing: 0.35rem;
-    color: #E6E5DD;
+  color: #E6E5DD;
   margin: 0 0 0 -4rem;
 }
 
 h3 {
   font-family: 'Roboto', sans-serif;
-  font-weight: bold;
+  font-weight: normal;
   font-style: normal;
   font-stretch: condensed;
-  letter-spacing: 0.15rem;
+  letter-spacing: 0.1rem;
+  color: #E6E5DD;
   text-transform: uppercase;
 }
 
@@ -44,9 +45,8 @@ code {
 
 .blurb-box {
   width: 50%;
-  min-width: 400px;
   padding: 2rem;
-  margin: 3rem;
+  margin: 6rem 1rem 6rem 2.5rem;
   background-color: #B99785;
 }
 
