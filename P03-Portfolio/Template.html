@@ -6,9 +6,9 @@
     <meta charset="utf-8">
     <title>Style Guide Template</title>
 
+    <link href="css/normalize.css" rel="stylesheet">
     <link href="css/main.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700|Roboto:300,400" rel="stylesheet">
-    <link href="css/normalize.css" rel="stylesheet"
 
   </head>
 
@@ -16,16 +16,12 @@
 
     <h1>Style Guide Template</h1>
 
-    <p>A template you can use to start building out your own style guides with.</p>
-
-
     <nav>
 
       <p>
-        Go to:
-        <a href="#interactive_elements">Interactive Elements</a>,
-        <a href="#text_elements">Text Elements</a>,
-        <a href="#combined_elements">Combined Elements</a>,
+        <a href="#interactive_elements" class="button-nav">Interactive Elements</a>
+        <a href="#text_elements" class="button-nav">Text Elements</a>
+        <a href="#combined_elements" class="button-nav">Combined Elements</a>
       </p>
 
     </nav>
@@ -41,30 +37,50 @@
           <h2>Navigation Button</h2>
 
           <h3>CSS selector:</h3>
-          <p class="white-text">.button-nav</p>
+          <ul>
+            <li><p>.button-nav</p></li
+          </ul>
 
           <h3>Sample code:</h3>
-          <code>&lt;a href="#" class="button"&gt;Default Button&lt;/a&gt;</code>
+          <code>&lt;a class=&quot;button-nav&quot; href=&quot;#&quot;&gt;Default Button&lt;/a&gt;</code>
 
           <h3>Rendered element:</h3>
-          <a class="button" href="#">Default Button</a>
+          <a class="button-nav" href="#">nav button</a>
         </div>
       </section>
 
       <section class="blurb-box">
         <div class="blurb-box-content">
           <h2>In-text link</h2>
+
+          <h3>CSS selector:</h3>
+          <ul>
+            <li><p>.in-text-link</p></li>
+          </ul>
+
+          <h3>Sample code:</h3>
+          <code>&lt;a class=&quot;in-text-link&quot; href=&quot;#&quot;&gt;here's the link&lt;/a&gt;</code>
+
+          <h3>Rendered element:</h3>
+          <p>Within a paragraph there will come a point at which there is a link. At that point, it'll say <a class="in-text-link" href="#">here's the link</a> and when you click on it, it'll do something! Who knows what? The possibilities are endless!</p>
         </div>
       </section>
 
       <section class="blurb-box">
         <div class="blurb-box-content">
-          <h2>Submit/Reset Buttons</h2>
-      </section>
+          <h2>Read More Button</h2>
 
-      <section class="blurb-box">
-        <div class="blurb-box-content">
-          <h2>Text Input Field</h2>
+            <h3>CSS selector:</h3>
+            <ul>
+              <li><p>.button-read-more</p></li>
+            </ul>
+
+            <h3>Sample code:</h3>
+            <code>&lt;a class=&quot;button-read-more&quot; href=&quot;#&quot;&gt;tell me more!&lt;/a&gt;</code>
+
+            <h3>Rendered element:</h3>
+             <a class="button-read-more" href="#">tell me more!</a>
+          </div>
       </section>
 
     </section>
@@ -78,12 +94,37 @@
       <section class="blurb-box">
         <div class="blurb-box-content">
           <h2>Headings</h2>
+          <h3>CSS selector:</h3>
+          <ul>
+            <li><p>h1</p></li>
+            <li><p>h2</p></li>
+            <li><p>h3</p></li>
+          </ul>
+
+          <h3>Sample code:</h3>
+          <code>&lt;h1&gt;First&lt;/h1&gt;<br> &lt;h2&gt;Second&lt;/h2&gt;<br> &lt;h3&gt;Third&lt;/h3&gt;</code>
+
+          <h3>Rendered element:</h3>
+            <h1>First</h1>
+            <h2>Second</h2>
+            <h3>Third</h3>
         </div>
       </section>
 
       <section class="blurb-box">
         <div class="blurb-box-content">
           <h2>Paragraphs</h2>
+          <h3>CSS selector:</h3>
+          <ul>
+            <li><p>p</p></li>
+          </ul>
+
+          <h3>Sample code:</h3>
+          <code>&lt;p&gt;Thestral dirigible plums, Viktor Krum hexed memory charm Animagus Invisibility Cloak three-headed Dog. Half-Blood Prince Invisibility Cloak cauldron cakes, hiya Harry! Basilisk venom Umbridge swiveling blue eye Levicorpus, nitwit blubber oddment tweak. Chasers Winky quills The Boy Who Lived.&lt;/p&gt;</code>
+
+          <h3>Rendered element:</h3>
+            <p>Thestral dirigible plums, Viktor Krum hexed memory charm Animagus Invisibility Cloak three-headed Dog. Half-Blood Prince Invisibility Cloak cauldron cakes, hiya Harry! Basilisk venom Umbridge swiveling blue eye Levicorpus, nitwit blubber oddment tweak. Chasers Winky quills The Boy Who Lived.</p>
+        </div>
         </div>
       </section>
 

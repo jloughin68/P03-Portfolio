@@ -7,3 +7,13 @@
        url('../fonts/Sunrise-International.woff') format('woff'),
        url('../fonts/Sunrise-International.woff2') format('woff2');
 }
+
+@font-face{
+  font-family: 'Moon Flower';
+  font-weight: normal;
+  font-style: normal;
+  src: url('../fonts/SMoon-Flower.eot');
+  src: url('../fonts/Moon-Flower.ttf') format('truetype'),
+       url('../fonts/Moon-Flower.woff') format('woff'),
+       url('../fonts/Moon-Flower.woff2') format('woff2');
+}

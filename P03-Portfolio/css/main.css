@@ -6,7 +6,13 @@ body {
 }
 
 h1 {
-  color: #0B1517;
+  font-family: 'Moon Flower', serif;
+  color: #E6E5DD;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 10rem;
+  letter-spacing: 0.35rem;
+  margin: 1rem 0;
 }
 
 h2 {
@@ -30,15 +36,17 @@ h3 {
 p {
   font-family: 'Roboto';
   font-weight: 300;
-  font-size: 0.8;
+  font-size: 0.85rem;
   letter-spacing: 0.1rem;
-  line-height: 1.2;
-    color: #0B1517;
+  line-height: 1.5;
+  color: #0B1517;
 }
 
-code {
+section code {
   background-color: #EEE;
-  padding: 0.5em 0.75em;
+  padding: 0.5em 0.75em;s
+  line-height: 3rem;
+  display: block;
 }
 
 .blurb-box {
@@ -46,11 +54,11 @@ code {
   padding: 2rem;
   margin: 6rem 1rem 6rem 2.5rem;
   background-color: rgba(230, 229, 221, 0.8);
-  opacity: 100%;
+  border-radius: 0.25em;
 }
 
 .blurb-box-content {
-  margin-top:-4rem;
+  margin-top:-4.5rem;
 }
 
 /*
@@ -59,22 +67,57 @@ code {
 
 /* Styling for the navigation button */
 .button-nav {
+  font-family: "Roboto Condensed", sans-serif;
+  font-weight: 400;
+  font-size: 0.8rem;
+  text-transform: uppercase;
   display: inline-block;
+  letter-spacing: 0.1rem;
   padding: 0.5em 0.75em;
-  color: #FFF;
-  background-color: #333;
+  color: white;
   border-radius: 0.25em;
   text-decoration: none;
-  -webkit-transition: background-color 0.5s ease-out;
-  transition: background-color 0.5s ease-out;
+  -webkit-transition: background-color 0.3s ease-out;
+  transition: background-color 0.3s ease-out;
+  -webkit-transition: color 0.3s ease-out;
+  transition: color 0.3s ease-out;
 }
 
-.button-nav:hover, .button-nav:focus {
-  background-color: #999;
+.button-nav:hover, .button-nav:focus, .button-nav:active {
+  background-color: white;
+  color: #B1B8A8;
 }
 
+.in-text-link {
+  text-decoration: none;
+  color: #B46955;
+  font-weight: 400;
+  -webkit-transition: color 0.3s ease-out;
+  transition: color 0.3s ease-out;
+}
 
+.in-text-link:hover, .in-text-link:focus, .in-text-link:active {
+  color: #87231A;
+}
 
+.button-read-more {
+  font-family: "Roboto Condensed", sans-serif;
+  font-weight: bold;
+  letter-spacing: 0.05rem;
+  text-decoration: none;
+  color: white;
+  font-size: 0.8;
+  background-color: #B46955;
+  font-weight: 400;
+  padding: 0.2rem 1.5rem 0.2em 1.5rem;
+  text-transform: lowercase;
+  -webkit-transition: background-color 0.3s ease-out;
+  transition: background-color 0.3s ease-out;
+}
+
+.button-read-more:hover, .button-read-more:focus, .button-read-more:active {
+  background-color: #87231A;
+}
 /*
   TEXT ELEMENTS -------------------
 */
