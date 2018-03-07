@@ -5,12 +5,17 @@ body {
   background-color: #B1B8A8;
 }
 
+/*
+  TEXT ELEMENTS -------------------
+*/
+
+
 h1 {
   font-family: 'Moon Flower', serif;
   color: #E6E5DD;
   font-weight: normal;
   font-style: normal;
-  font-size: 10rem;
+  font-size: 8rem;
   letter-spacing: 0.35rem;
   margin: 1rem 0;
 }
@@ -33,7 +38,7 @@ h3 {
   text-transform: uppercase;
 }
 
-p {
+.regular-text {
   font-family: 'Roboto';
   font-weight: 300;
   font-size: 0.85rem;
@@ -85,7 +90,7 @@ section code {
 
 .button-nav:hover, .button-nav:focus, .button-nav:active {
   background-color: white;
-  color: #B1B8A8;
+  color: #B99785;
 }
 
 .in-text-link {
@@ -118,13 +123,14 @@ section code {
 .button-read-more:hover, .button-read-more:focus, .button-read-more:active {
   background-color: #87231A;
 }
-/*
-  TEXT ELEMENTS -------------------
-*/
-
-
-
 
 /*
   COMBINED ELEMENTS -------------------
 */
+
+.nav-box {
+  background-color: #B99785;
+  padding: 0.5rem 2rem;
+  margin-bottom: 1rem;
+  display: inline-block;
+}
