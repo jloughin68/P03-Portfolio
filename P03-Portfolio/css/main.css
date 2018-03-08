@@ -1,7 +1,5 @@
 body {
-  font-family: 'Roboto', sans-serif;
-  font-weight: lighter;
-  padding: 2rem;
+
   background-color: #B1B8A8;
 }
 
@@ -12,12 +10,12 @@ body {
 
 h1 {
   font-family: 'Moon Flower', serif;
-  color: #E6E5DD;
+  color: white;
   font-weight: normal;
   font-style: normal;
   font-size: 8rem;
   letter-spacing: 0.35rem;
-  margin: 1rem 0;
+  margin: 10rem 15% 2rem 15%;
 }
 
 h2 {
@@ -43,7 +41,7 @@ h3 {
   font-weight: 300;
   font-size: 0.85rem;
   letter-spacing: 0.1rem;
-  line-height: 1.5;
+  line-height: 1.7;
   color: #0B1517;
 }
 
@@ -54,11 +52,19 @@ section code {
   display: block;
 }
 
-.blurb-box {
+.style-guide-blurb-box {
   width: 50%;
   padding: 2rem;
-  margin: 6rem 1rem 6rem 2.5rem;
+  margin: 6rem 1rem 6rem 4rem;
   background-color: rgba(230, 229, 221, 0.8);
+  border-radius: 0.25em;
+}
+
+.blurb-box {
+  width: 30%;
+  padding: 2rem;
+  margin: 6rem 1rem 6rem 2.5rem;
+  background-color: rgba(230, 229, 221, 0.9);
   border-radius: 0.25em;
 }
 
@@ -79,6 +85,7 @@ section code {
   display: inline-block;
   letter-spacing: 0.1rem;
   padding: 0.5em 0.75em;
+  margin: 1rem;
   color: white;
   border-radius: 0.25em;
   text-decoration: none;
@@ -107,15 +114,17 @@ section code {
 
 .button-read-more {
   font-family: "Roboto Condensed", sans-serif;
-  font-weight: bold;
-  letter-spacing: 0.05rem;
-  text-decoration: none;
-  color: white;
-  font-size: 0.8;
-  background-color: #B46955;
   font-weight: 400;
-  padding: 0.2rem 1.5rem 0.2em 1.5rem;
+  letter-spacing: 0.05rem;
+  font-size: 0.8;
+  color: white;
+  text-decoration: none;
   text-transform: lowercase;
+
+  padding: 0.2rem 1.5rem 0.2em 1.5rem;
+  background-color: #B46955;
+
+  border-radius: 0.25em;
   -webkit-transition: background-color 0.3s ease-out;
   transition: background-color 0.3s ease-out;
 }
@@ -128,9 +137,119 @@ section code {
   COMBINED ELEMENTS -------------------
 */
 
-.nav-box {
+.nav-box-styleguide {
   background-color: #B99785;
-  padding: 0.5rem 2rem;
+  padding: 0.5rem 4rem;
   margin-bottom: 1rem;
   display: inline-block;
+}
+
+.nav-box {
+  z-index: 10;
+  background-color: #B99785;
+  padding: 0.5rem 2rem;
+  margin: 0;
+  display: inline-block;
+  width: 100%;
+  position: fixed;
+  top:0;
+}
+
+/*based off of tutorial on https://www.w3schools.com/howto/howto_css_image_text.asp*/
+
+img {
+  width: 100%;
+}
+
+.container {
+  position: relative;
+}
+
+.contained-blurb {
+    position: absolute;
+    margin: 0;
+    bottom: 2rem;
+    left: 5rem;
+}
+
+.palette {
+  background-color: white;
+}
+
+.swatch {
+  font-family: 'Merriweather', serif;
+  color: white;
+  margin: 1em;
+  padding: 2em 1.65em;
+  margin-left:1em;
+  margin-right: 0;
+  display: inline-block;
+}
+
+
+.cream {
+  background-color: #E6E5DD;
+}
+
+.beige {
+  background-color: #B99785;
+}
+
+.pink {
+  background-color: #B46955;
+}
+
+.red {
+  background-color: #87231A;
+}
+
+.grey-green {
+  background-color: #B1B8A8;
+}
+
+.teal {
+  background-color: #416463;
+}
+
+.navy-grey {
+  background-color: #0B1517;
+}
+
+footer {
+  background-color: #0B1517;
+  padding: 1rem 2rem;
+  margin-top: 3rem;
+  text-align: center;
+  width: 100%;
+}
+
+.footer-text {
+  font-family: 'Roboto', sans-serif;
+  color: white;
+}
+
+/* paintings page styling */
+
+.painting-box {
+  background-color: #E6E5DD;
+  margin: 2rem 15% 2rem 15%;
+  padding: 1.8%;
+  text-align: center;
+}
+
+.painting-column{
+  width: 29%;
+  margin-left: 1.8%;
+  margin-right: 1.8%;
+  padding: 0;
+  display: inline-block;
+
+}
+
+.painting {
+  margin-top: 5.4%;
+  margin-bottom: 5.4%;
+  z-index: 9;
+  width:100%;
+  vertical-align: top;
 }

@@ -1,10 +1,11 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
   <head>
 
     <meta charset="utf-8">
-    <title>Style Guide Template</title>
+    <title>Style Guide</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/main.css" rel="stylesheet">
@@ -28,7 +29,7 @@
     <section id="interactive_elements">
 
       <!-- Default Button styling section -->
-      <section class="blurb-box">
+      <section class="style-guide-blurb-box">
         <div class="blurb-box-content">
           <h2>Navigation Button</h2>
 
@@ -45,7 +46,7 @@
         </div>
       </section>
 
-      <section class="blurb-box">
+      <section class="style-guide-blurb-box">
         <div class="blurb-box-content">
           <h2>In-text link</h2>
 
@@ -62,7 +63,7 @@
         </div>
       </section>
 
-      <section class="blurb-box">
+      <section class="style-guide-blurb-box">
         <div class="blurb-box-content">
           <h2>Read More Button</h2>
 
@@ -87,7 +88,7 @@
     <!-- TEXT ELEMENTS SECTION // -->
     <section id="text_elements">
 
-      <section class="blurb-box">
+      <section class="style-guide-blurb-box">
         <div class="blurb-box-content">
           <h2>Headings</h2>
           <h3>CSS selector:</h3>
@@ -107,7 +108,7 @@
         </div>
       </section>
 
-      <section class="blurb-box">
+      <section class="style-guide-blurb-box">
         <div class="blurb-box-content">
           <h2>Paragraphs</h2>
           <h3>CSS selector:</h3>
@@ -119,12 +120,12 @@
           <code>&lt;p&gt;Thestral dirigible plums, Viktor Krum hexed memory charm Animagus Invisibility Cloak three-headed Dog. Half-Blood Prince Invisibility Cloak cauldron cakes, hiya Harry! Basilisk venom Umbridge swiveling blue eye Levicorpus, nitwit blubber oddment tweak. Chasers Winky quills The Boy Who Lived.&lt;/p&gt;</code>
 
           <h3>Rendered element:</h3>
-            <p class="regular-text">Thestral dirigible plums, Viktor Krum hexed memory charm Animagus Invisibility Cloak three-headed Dog. Half-Blood Prince Invisibility Cloak cauldron cakes, hiya Harry! Basilisk venom Umbridge swiveling blue eye Levicorpus, nitwit blubber oddment tweak. Chasers Winky quills The Boy Who Lived.</p>
+            <p class="regular-text">Thestral dirigible plums, Viktor Krum hexed memory charm Animagus Invisibility Cloak three-headed Dog. Half-Blood Prince Invisibility Cloak cauldron cakes, hiya Harry! Basilisk venom Umbridge swiveling blue eye Levicorpus, three-headed nitwit blubber oddment tweak. Chasers Winky quills The Boy Who Lived.</p>
         </div>
         </div>
       </section>
 
-      <section class="blurb-box">
+      <section class="style-guide-blurb-box">
         <div class="blurb-box-content">
           <h2>Bulleted Lists</h2>
           <h3>CSS selector:</h3>
@@ -144,7 +145,7 @@
         </div>
       </section>
 
-      <section class="blurb-box">
+      <section class="style-guide-blurb-box">
         <div class="blurb-box-content">
           <h2>Numbered Lists</h2>
           <h3>CSS selector:</h3>
@@ -172,7 +173,7 @@
     <!-- COMBINED ELEMENTS SECTION // -->
     <section id="combined_elements">
 
-      <section class="blurb-box">
+      <section class="style-guide-blurb-box">
         <div class="blurb-box-content">
           <h2>Main Navigation</h2>
           <h3>CSS selector:</h3>
@@ -185,24 +186,79 @@
           <code>&lt;div class=&quot;nav-box&quot;&gt;<br> &lt;a class=&quot;button-nav&quot; href=&quot;#&quot;&gt;about&lt;/a&gt;<br> &lt;a class=&quot;button-nav&quot; href=&quot;#&quot;&gt;projects&lt;/a&gt; <br> &lt;a class=&quot;button-nav&quot; href=&quot;#&quot;&gt;art&lt;/a&gt; <br> &lt;a class=&quot;button-nav&quot; href=&quot;#&quot;&gt;contact&lt;/a&gt;<br> &lt;/div&gt;</code>
 
           <h3>Rendered element:</h3>
-          <div class="nav-box">
+          <nav class="nav-box-styleguide">
             <a class="button-nav" href="#">about</a>
             <a class="button-nav" href="#">projects</a>
             <a class="button-nav" href="#">art</a>
             <a class="button-nav" href="#">contact</a>
-          </div>
+          </nav>
         </div>
       </section>
 
-      <section class="blurb-box">
+      <section class="style-guide-blurb-box">
         <div class="blurb-box-content">
-          <h2>Product Listing</h2>
+          <h2>Project Listing</h2>
+          <h3>CSS selector:</h3>
+          <ul>
+            <li class="regular-text">.container</li>
+            <li class="regular-text">.blurb-box</li>
+            <li class="regular-text">.contained-blurb</li>
+            <li class="regular-text">.blurb-box-content</li>
+            <li class="regular-text">.regular-text</li>
+            <li class="regular-text">.button-read-more</li>
+          </ul>
+
+          <h3>Sample code:</h3>
+          <code>&lt;div class=&quot;container&quot;&gt; <br> &lt;img src=&quot;img/crushed.jpeg&quot; alt=&quot;a dramatic screen capture of a little robot standing in front of a spot-lit big robot&quot;&gt;<br> &lt;section class=&quot;blurb-box contained-blurb&quot;&gt;<br> &lt;div class=&quot;blurb-box-content&quot;&gt; <br>&lt;h2&gt;Project Title&lt;/h2&gt;<br> &lt;p class=&quot;regular-text&quot;&gt;Thestral dirigible plums, Viktor Krum hexed memory charm Animagus Invisibility Cloak three-headed Dog. Half-Blood Prince Invisibility Cloak cauldron cakes, hiya Harry! Basilisk venom Umbridge swiveling blue eye Levicorpus.&lt;/p&gt;<br> &lt;a class=&quot;button-read-more&quot; href=&quot;#&quot;&gt;tell me more!&lt;/a&gt; <br>&lt;/div&gt; <br>&lt;/section&gt; <br> &lt;/div&gt;</code>
+
+          <h3>Rendered element:</h3>
+          <p class="regular-text">Please see below.</p>
         </div>
       </section>
 
-    </section>
-    <!-- // COMBINED ELEMENTS SECTION -->
+      <div class="container">
+        <img src="img/crushed.jpeg" alt="a dramatic screen capture of a little robot standing in front of a spot-lit big robot">
+        <section class="blurb-box contained-blurb">
+          <div class="blurb-box-content">
+            <h2>Project Title</h2>
+            <p class="regular-text">Thestral dirigible plums, Viktor Krum hexed memory charm Animagus Invisibility Cloak three-headed Dog. Half-Blood Prince Invisibility Cloak cauldron cakes, hiya Harry! Basilisk venom Umbridge swiveling blue eye Levicorpus.</p>
+            <a class="button-read-more" href="#">tell me more!</a>
+          </div>
+        </section>
+      </div>
 
+      <section class="style-guide-blurb-box">
+        <div class="blurb-box-content">
+          <h2>Colour Palette</h2>
+          <h3>CSS selector:</h3>
+            <ul>
+              <li class="regular-text">.palette</li>
+              <li class="regular-text">.swatch</li>
+              <li class="regular-text">.cream</li>
+              <li class="regular-text">.beige</li>
+              <li class="regular-text">.pink</li>
+              <li class="regular-text">...</li>
+            </ul>
+
+          <h3>Sample code:</h3>
+          <code>&lt;section class=&quot;palette&quot;&gt; <br> &lt;p class=&quot;swatch cream&quot;&gt;#E6E5DD&lt;/p&gt; <br> &lt;p class=&quot;swatch beige&quot;&gt;#B99785&lt;/p&gt; <br>&lt;p class=&quot;swatch pink&quot;&gt;#B46955&lt;/p&gt;<br> &lt;p class=&quot;swatch red&quot;&gt;#87231A&lt;/p&gt;<br> &lt;p class=&quot;swatch grey-green&quot;&gt;#B1B8A8&lt;/p&gt;<br> &lt;p class=&quot;swatch teal&quot;&gt;#416463&lt;/p&gt; <br>&lt;p class=&quot;swatch navy-grey&quot;&gt;#0B1517&lt;/p&gt;<br> &lt;/section&gt;</code>
+
+          <h3>Rendered element:</h3>
+          <section class="palette">
+              <p class="swatch cream">#E6E5DD</p>
+              <p class="swatch beige">#B99785</p>
+              <p class="swatch pink">#B46955</p>
+              <p class="swatch red">#87231A</p>
+              <p class="swatch grey-green">#B1B8A8</p>
+              <p class="swatch teal">#416463</p>
+              <p class="swatch navy-grey">#0B1517</p>
+          </section>
+        </div>
+      </section>
+
+    <footer>
+      <p class="footer-text">footer content</p>
+    </footer>
 
   </body>
 </html>
