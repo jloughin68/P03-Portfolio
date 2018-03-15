@@ -11,90 +11,103 @@
     <link href="css/flexbox.css" rel="stylesheet">
     <link href="css/main.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700|Roboto:300,400" rel="stylesheet">
+    <link>
 
   </head>
 
-  <body>
+  <body class="background">
+    <img class= "front-trees-left" src="img/front-trees-left.png" alt="trees on left side of the content">
+    <img class= "front-trees-right" src="img/front-trees-right.png" alt="trees on right side of the content">
 
-    <header class="box-item-nav ">
+    <header class="box-item-nav">
       <nav class="nav-box">
-        <a class="button-nav" href="#">home</a>
-        <a class="button-nav" href="#about">about</a>
-        <a class="button-nav" href="#projects">projects</a>
-        <a class="button-nav active" href="#art">art</a>
-        <a class="button-nav" href="#contact">contact</a>
-        <a href="#"><img src="img/placeholder-logo.svg" class="logo"></a>
+        <a class="header-button-nav" href="#">top</a>
+        <a class="header-button-nav" href="#about">about</a>
+        <a class="header-button-nav" href="#projects">projects</a>
+        <a class="header-button-nav active" href="#art">art</a>
+        <a class="header-button-nav" href="#contact">contact</a>
+        <a href="index.html" class="logo">juliana loughin</a>
+        <div class="hamburger-container" onclick="myFunction(this)">
+          <div class="bar1"></div>
+          <div class="bar2"></div>
+          <div class="bar3"></div>
+        </div>
       </nav>
     </header>
 
-    <div class="container">
-      <img src="img/placeholder3.jpeg" alt="placeholder" class="top-image">
-      <div class="contained-title">
-        <h1>Jules</h1>
-      </div>
+    <div class="vertical-space-10"></div>
+
+    <div class="centered">
+      <h3 class="home-h3">call me</h3>
+      <h1>Jules</h1>
     </div>
 
+    <div class="vertical-space-12"></div>
+
     <section id="about">
+      <div class="centered">
+        <h2>about me</h2>
+      </div>
       <section class="box project-module">
-        <div class="third-column">
-          <img src="img/self.jpg" alt="placeholder image" class="project-photo box-item-image">
+        <div class="self-portrait-column">
+          <img src="img/self.jpg" alt="a self-portrait from behind" class="project-photo box-item-image">
         </div>
         <div class="project-text box-item-text">
-          <h3 class="project-h3">About Me</h3>
-          <p class="regular-text">Thestral dirigible plums, Viktor Krum hexed memory charm Animagus Invisibility Cloak three-headed Dog. Half-Blood Prince Invisibility Cloak cauldron cakes, hiya Harry! Basilisk venom Umbridge swiveling blue eye Levicorpus. Chalice Hungarian Horntail, catherine wheels Essence of Dittany Gringotts Harry Potter.</p>
+          <p class="regular-text">Hi, I'm Jules, a student of Interactive Arts and Technology at Simon Fraser University. I love to design stories into everything I create, from point-and-click narratives and VR games to installation art. This probably comes from my passion for excellent fiction, and my upbringing in a house full of geeks. Seriously, don't get me started on Harry Potter or The Lord of the Rings.</p>
         </div>
       </section>
     </section>
 
+    <div class="vertical-space-10"></div>
+
     <section id="projects">
-      <div class="container">
-        <img src="img/crushed.jpeg" alt="a dramatic screen capture of a little robot standing in front of a spot-lit big robot">
-        <section class="blurb-box contained-blurb">
-          <div class="blurb-box-content">
-            <h2>Project Title</h2>
-            <p class="regular-text">Thestral dirigible plums, Viktor Krum hexed memory charm Animagus Invisibility Cloak three-headed Dog. Half-Blood Prince Invisibility Cloak cauldron cakes, hiya Harry! Basilisk venom Umbridge swiveling blue eye Levicorpus.</p>
-            <a class="button-read-more" href="#">tell me more!</a>
-          </div>
-        </section>
+      <div class="centered">
+        <h2>projects</h2>
       </div>
-
-
-      <div class="container">
-        <img src="img/crushed.jpeg" alt="a dramatic screen capture of a little robot standing in front of a spot-lit big robot">
-        <section class="blurb-box contained-blurb">
-          <div class="blurb-box-content">
-            <h2>Project Title</h2>
-            <p class="regular-text">Thestral dirigible plums, Viktor Krum hexed memory charm Animagus Invisibility Cloak three-headed Dog. Half-Blood Prince Invisibility Cloak cauldron cakes, hiya Harry! Basilisk venom Umbridge swiveling blue eye Levicorpus.</p>
-            <a class="button-read-more" href="#">tell me more!</a>
-          </div>
-        </section>
+      <div class="project-module">
+        <div class="centered">
+          <a href="ribbonbound.html" class="project-listing box-item-image">
+            <h3 class="project-listing-title">ribbonbound</h3>
+            <img src="img/ribbonbound.jpg" alt="a ribbon-wrapped wizard">
+          </a>
+          <a href="ribbonbound.html" class="project-listing box-item-image">
+            <h3 class="project-listing-title">crushed</h3>
+            <img src="img/crushed.jpeg" alt="two robots">
+          </a>
+        </div>
       </div>
     </section>
 
+    <div class="vertical-space-10"></div>
+
     <section id="art">
+      <div class="centered">
+        <h2>art</h2>
+      </div>
       <section class="painting-box box">
         <div class="third-column">
           <img src="img/charlie.jpg" alt="placeholder" class="painting">
           <img src="img/harry.jpg" alt="placeholder" class="painting">
-          <img src="img/placeholder1.jpg" alt="placeholder" class="painting">
+          <img src="img/remu.jpg" alt="placeholder" class="painting">
         </div>
         <div class="third-column">
           <img src="img/Nova.jpg" alt="placeholder" class="painting">
           <img src="img/sirius-colourful.jpg" alt="placeholder" class="painting">
-          <img src="img/remu.jpg" alt="placeholder" class="painting">
+          <img src="img/arms.jpg" alt="placeholder" class="painting">
         </div>
         <div class="third-column">
           <img src="img/tonks.jpg" alt="placeholder" class="painting">
           <img src="img/remus-colourful.jpg" alt="placeholder" class="painting">
-          <img src="img/placeholder1.jpg" alt="placeholder" class="painting">
+          <img src="img/Rembrandt.jpg" alt="placeholder" class="painting">
         </div>
-        <a class="button-read-more" href="#">show me more!</a>
       </section>
     </section>
 
     <footer>
       <p class="footer-text">footer content</p>
     </footer>
+
+  <script src="javascript.js"></script>
 
   </body>
 </html>
