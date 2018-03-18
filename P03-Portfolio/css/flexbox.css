@@ -87,6 +87,10 @@
 	/* padding: 0 1rem; */
 }
 
+.box-contact {
+	justify-content: center;
+}
+
 
 /*
 	We can use media queries to apply different styles at specific sizes. In this case, we are specifying when the browser window's width is greater than 50.25em, we should apply the styling within the brackets.
