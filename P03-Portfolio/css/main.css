@@ -1,7 +1,7 @@
 .background {
   background-image: url("../img/background.jpg");
   background-size: 100%;
-  background-position: 0 -5rem;
+  background-position: 0 -30rem;
   background-repeat: no-repeat;
   background-color: #E6E5DD;
 }
@@ -9,7 +9,8 @@
 .paper-background {
   background-image: url("../img/paper-background.jpg");
   background-size: 100%;
-  background-position: 0 -5rem;
+  background-position: 0 0;
+  background-attachment: fixed;
   background-repeat: no-repeat;
   background-color: #E6E5DD;
 }
@@ -17,22 +18,23 @@
 .front-trees-left {
   position: absolute;
   left: 0;
-  top: -5rem;
-  width: 26.666666666%;
+  top: -30rem;
+  width: 23.38541667%;
   z-index: 9;
   display: none;
+  overflow-y: hidden;
 }
 
 .front-trees-right {
   position: absolute;
   right: 0;
-  top: -5rem;
-  width: 18.95833333%;
+  top: -30rem;
+  width: 15.36458333%;
   z-index: 9;
   display: none;
 }
 
-.perma-trees-left {
+/* .perma-trees-left {
   position: absolute;
   right: left;
   top: -5rem;
@@ -46,14 +48,14 @@
   top: -5rem;
   width: 18.95833333%;
   z-index: 9;
-}
+} */
 
 /*
   TEXT ELEMENTS -------------------
 */
 
 h1 {
-  font-family: 'Moon Flower', serif;
+  font-family: 'Leafy', serif;
   color: white;
   text-shadow: -2px 4px 10px rgba(11, 21, 22, 0.25);
   font-weight: normal;
@@ -66,8 +68,10 @@ h1 {
 }
 
 .centered {
+  vertical-align: CENTER;
   text-align: center;
-  margin: auto;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .margin-auto {
@@ -75,14 +79,14 @@ h1 {
 }
 
 h2 {
-  font-family: 'Sunrise International Demo', sans-serif;
+  font-family: 'Hello Stockholm', sans-serif;
   font-weight: normal;
   font-style: normal;
-  font-size: 2rem;
+  font-size: 5rem;
   letter-spacing: 0.35rem;
   color: white;
   text-shadow: -2px 4px 10px rgba(11, 21, 22, 0.25);
-  margin: 2rem 0 1rem 0;
+  margin-bottom: -6rem;
 }
 
 h3 {
@@ -129,6 +133,30 @@ section code {
   margin-left: auto;
   margin-right: auto;
   background-color: rgba(255, 255, 255, 0.7);
+}
+
+/* styling for carousel: http://mediatemple.net/blog/tips/carousels-dont-have-to-be-complicated/ */
+
+.slider {
+  margin: 0;
+  /* line them up horizontally */
+  display: flex;
+  /* allow for scrolling */
+  overflow-x: auto;
+  /* make it smooth on iOS */
+  -webkit-overflow-scrolling: touch;
+}
+
+.slider-img {
+  /* make sure the width is honored */
+  flex-shrink: 0;
+  height: 500px;
+  width: auto;
+  margin-right: 1rem;
+}
+
+.slider-img:hover, .slider-img:focus, .slider-img:active {
+
 }
 
 /* .blurb-box-content {
@@ -226,11 +254,8 @@ section code {
 */
 
 .project-listing {
-  margin: 0;
-  margin-bottom: 1rem;
-  display: inline-block;
+  display: block;
   position: relative;
-  width: 100%;
   opacity: 1;
   text-decoration: none;
   -webkit-transition: opacity 0.3s ease-out;
@@ -244,13 +269,17 @@ section code {
 .project-listing-title {
   font-family: "Roboto Condensed", sans-serif;
   color: white;
-  text-align: center;
+  /* text-align: center; */
   font-weight: 400;
   font-size: 1rem;
   position: absolute;
-  bottom: 1rem;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  bottom: 5%;
+  left: 10%;
+  /* transform: translate(-50%, -50%); */
+}
+
+.p1-margin{
+  margin-bottom: 1rem;
 }
 
 @media (min-width: 54.13rem) {
@@ -261,17 +290,13 @@ section code {
 
 @media (min-width: 42.35rem) {
   .project-listing {
-    margin: 1.5rem;
-    display: inline-block;
-    max-width:30%
+
   }
 }
 
 @media (min-width: 55.81rem) {
   .project-listing {
-    margin: 1.5rem;
-    display: inline-block;
-    max-width:35%
+
   }
 }
 
@@ -294,7 +319,7 @@ section code {
 }
 
 .logo {
-  font-family: 'Moon Flower', serif;
+  font-family: 'Leafy', serif;
   color: white;
   font-size: 2.5rem;
   border-color: white;
@@ -467,7 +492,7 @@ footer {
     padding: 1rem 6rem;
   }
   h2 {
-    font-size: 4rem;
+    font-size: 10rem;
   }
   h1 {
     font-size: 7rem;
@@ -496,13 +521,13 @@ footer {
   }
 }
 
-.painting {
+/* .painting {
   margin-top: 5.4%;
   margin-bottom: 5.4%;
   z-index: 10;
   width:100%;
   vertical-align: top;
-}
+} */
 
 /* project page styling */
 
