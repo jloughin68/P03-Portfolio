@@ -1,9 +1,49 @@
 .background {
-  background-image: url("../img/background.jpg");
+  background-image:
+  url("../img/paper-background.jpg");
   background-size: 100%;
-  background-position: 0 -30rem;
   background-repeat: no-repeat;
+  background-position: 0 -25rem;
   background-color: #E6E5DD;
+  background-attachment: fixed;
+}
+
+@media (min-width: 50rem) {
+  .background {
+    background-image: url("../img/background.jpg");
+    background-position: 0 -30rem;
+    background-attachment: scroll;
+  }
+}
+
+@media (min-width: 56.94rem) {
+  .background {
+    background-position: 0 -35rem;
+  }
+}
+
+@media (min-width: 65rem) {
+  .background {
+    background-position: 0 -40rem;
+  }
+}
+
+@media (min-width: 70rem) {
+  .background {
+    background-position: 0 -45rem;
+  }
+}
+
+@media (min-width: 75rem) {
+  .background {
+    background-position: 0 -50rem;
+  }
+}
+
+@media (min-width: 90rem) {
+  .background {
+    background-position: 0 -55rem;
+  }
 }
 
 .paper-background {
@@ -15,7 +55,7 @@
   background-color: #E6E5DD;
 }
 
-.front-trees-left {
+/* .front-trees-left {
   position: absolute;
   left: 0;
   top: -30rem;
@@ -32,6 +72,37 @@
   width: 15.36458333%;
   z-index: 9;
   display: none;
+} */
+
+.front-trees-left {
+  position: fixed;
+  height: auto;
+  width: 5rem;
+  left: 0;
+  top: -10rem;
+  z-index: 9;
+  display: inline-block;
+  overflow: hidden;
+}
+
+.front-trees-right {
+  position: fixed;
+  height: auto;
+  width: 3rem;
+  right: 0;
+  top: -10rem;
+  z-index: 9;
+  display: inline-block;
+  overflow: hidden;
+}
+
+@media (min-width: 50rem) {
+  .front-trees-left {
+    display: none;
+  }
+  .front-trees-right {
+    display: none;
+  }
 }
 
 /* .perma-trees-left {
@@ -50,6 +121,28 @@
   z-index: 9;
 } */
 
+.perma-trees-left {
+  position: fixed;
+  height: auto;
+  width: 5rem;
+  left: 0;
+  top: -10rem;
+  z-index: 9;
+  display: inline-block;
+  overflow: hidden;
+}
+
+.perma-trees-right {
+  position: fixed;
+  height: auto;
+  width: 3rem;
+  right: 0;
+  top: -10rem;
+  z-index: 9;
+  display: inline-block;
+  overflow: hidden;
+}
+
 /*
   TEXT ELEMENTS -------------------
 */
@@ -60,7 +153,7 @@ h1 {
   text-shadow: -2px 4px 10px rgba(11, 21, 22, 0.25);
   font-weight: normal;
   font-style: normal;
-  font-size: 4rem;
+  font-size: 5rem;
   letter-spacing: 0.35rem;
   margin-top: 0;
   margin-bottom: 2rem;
@@ -507,8 +600,6 @@ footer {
 
 .self-portrait-column {
   width: 50%;
-  margin-left: 1.8%;
-  margin-right: 1.8%;
   margin-bottom: 1rem;
   padding: 0;
   display: inline-block;
@@ -570,12 +661,12 @@ footer {
     margin-left: 4rem;
     margin-right: 1rem;
   }
-  .front-trees-right {
+  /* .front-trees-right {
     display: inline-block;
   }
   .front-trees-left {
     display: inline-block;
-  }
+  } */
 }
 
 /* responsive video code from https://benmarshall.me/responsive-iframes/*/
