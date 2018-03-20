@@ -1,24 +1,32 @@
 .background {
   background-image:
   url("../img/paper-background.jpg");
-  background-size: 100%;
+  background-size: 120%;
   background-repeat: no-repeat;
-  background-position: 0 -25rem;
+  background-position: -5 -25rem;
   background-color: #E6E5DD;
   background-attachment: fixed;
+  overflow: hidden;
+}
+
+@media (min-width: 45rem) {
+  .background {
+    background-image: url("../img/background.jpg");
+    background-position: -5rem -33rem;
+    background-attachment: scroll;
+  }
 }
 
 @media (min-width: 50rem) {
   .background {
-    background-image: url("../img/background.jpg");
-    background-position: 0 -30rem;
-    background-attachment: scroll;
+    background-position: -5rem -40rem;
   }
 }
 
 @media (min-width: 56.94rem) {
   .background {
     background-position: 0 -35rem;
+    background-size: 100%;
   }
 }
 
@@ -36,13 +44,19 @@
 
 @media (min-width: 75rem) {
   .background {
-    background-position: 0 -50rem;
+    background-position: 0 -51rem;
   }
 }
 
 @media (min-width: 90rem) {
   .background {
-    background-position: 0 -55rem;
+    background-position: 0 -57rem;
+  }
+}
+
+@media (min-width: 100rem) {
+  .background {
+    background-position: 0 -68rem;
   }
 }
 
@@ -88,15 +102,15 @@
 .front-trees-right {
   position: fixed;
   height: auto;
-  width: 3rem;
+  width: 4rem;
   right: 0;
-  top: -10rem;
+  top: -8rem;
   z-index: 9;
   display: inline-block;
   overflow: hidden;
 }
 
-@media (min-width: 50rem) {
+@media (min-width: 45rem) {
   .front-trees-left {
     display: none;
   }
@@ -155,8 +169,7 @@ h1 {
   font-style: normal;
   font-size: 5rem;
   letter-spacing: 0.35rem;
-  margin-top: 0;
-  margin-bottom: 2rem;
+  margin: 0;
   display: block;
 }
 
@@ -180,6 +193,7 @@ h2 {
   color: white;
   text-shadow: -2px 4px 10px rgba(11, 21, 22, 0.25);
   margin-bottom: -6rem;
+  margin-top: 0;
 }
 
 h3 {
@@ -194,6 +208,7 @@ h3 {
   text-shadow: -2px 4px 10px rgba(11, 21, 22, 0.25);
   color: white;
   margin: 0;
+  font-size: 0.6rem;
 }
 
 .project-h3 {
@@ -204,11 +219,16 @@ h3 {
 .regular-text {
   font-family: 'Roboto';
   font-weight: 300;
-  font-size: 0.85rem;
+  font-size: 0.7rem;
   letter-spacing: 0.1rem;
   line-height: 1.7;
   color: #0B1517;
+}
 
+@media (min-width: 25.88rem) {
+  .regular-text {
+    font-size: 0.85rem;
+  }
 }
 
 section code {
@@ -243,18 +263,32 @@ section code {
 .slider-img {
   /* make sure the width is honored */
   flex-shrink: 0;
-  height: 500px;
+  height: 150px;
   width: auto;
   margin-right: 1rem;
+}
+
+@media (min-width: 25.69rem) {
+  .slider-img {
+    height: 200px;
+  }
+}
+
+@media (min-width: 34.88rem) {
+  .slider-img {
+    height: 300px;
+  }
+}
+
+@media (min-width: 53.25rem) {
+  .slider-img {
+    height: 500px;
+  }
 }
 
 .slider-img:hover, .slider-img:focus, .slider-img:active {
 
 }
-
-/* .blurb-box-content {
-  margin-top:-4.5rem;
-} */
 
 /*
   INTERACTIVE ELEMENTS -------------------
@@ -425,9 +459,26 @@ section code {
   text-decoration: none;
 }
 
+/* spacers named for the size they are above a tablet size-- they shrink at a smaller size to avoid giant gaps */
+
 .vertical-space-5 {
   padding: 5%;
 }
+
+.vertical-space-7 {
+  padding: 10%;
+}
+
+@media (min-width: 40.19rem) {
+  .vertical-space-7 {
+    padding: 7%;
+  }
+  .home-h3 {
+    font-size: 1rem;
+  }
+}
+
+
 
 .vertical-space-10 {
   padding: 10%;
@@ -439,24 +490,43 @@ section code {
 
 /* animated hamburger menu found here: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_menu_icon_js */
 
-.hamburger-container {
+/* .hamburger-container {
     display: inline-block;
     cursor: pointer;
     margin: 1rem;
     padding: 0.5em 0.75em;
     vertical-align: BOTTOM;
+} */
+
+.nav-icon {
+  vertical-align: CENTER;
+  display: inline-block;
+  width: 1.75rem;
+  margin: 0.75rem;
+  -webkit-transition: background-color 0.3s ease-out;
+  transition: background-color 0.3s ease-out;
+  -webkit-transition: color 0.3s ease-out;
+  transition: color 0.3s ease-out;
 }
 
-@media (min-width: 46rem) {
-  .hamburger-container {
+.nav-icon:hover, .nav-icon:focus, .nav-icon:active {
+  background-color: white;
+  color: rgb(177, 183, 168);
+}
+
+@media (min-width: 36rem) {
+  /* .hamburger-container {
     display: none;
-  }
+  } */
   .header-button-nav {
     display: inline-block;
   }
+  .nav-icon {
+    display: none;
+  }
 }
 
-.bar1, .bar2, .bar3 {
+/* .bar1, .bar2, .bar3 {
     width: 20px;
     height: 2px;
     background-color: white;
@@ -478,7 +548,7 @@ section code {
 .change .bar3 {
     -webkit-transform: rotate(45deg) translate(-6.5px, -6px);
     transform: rotate(45deg) translate(-6.5px, -6px);
-}
+} */
 
 
 /*based off of tutorial on https://www.w3schools.com/howto/howto_css_image_text.asp*/
@@ -598,17 +668,31 @@ footer {
   }
 }
 
-.self-portrait-column {
-  width: 50%;
+.self-portrait-full {
+  width: 100%;
   margin-bottom: 1rem;
-  padding: 0;
+  display: none;
+}
+
+.self-portrait-half {
+  width: 100%;
+  margin-bottom: 1rem;
   display: inline-block;
 }
 
-@media (min-width: 57rem) {
-  .self-portrait-column {
-    width: 29%;
-    margin-bottom: none;
+@media (min-width: 57.75rem) {
+  .self-portrait-full {
+    width: 12rem;
+    display: inline-block;
+  }
+  .self-portrait-half {
+    display: none;
+  }
+}
+
+@media (min-width: 74rem) {
+  .self-portrait-full {
+    width: 20rem;
   }
 }
 
@@ -629,7 +713,7 @@ footer {
 .home-page-module {
   margin: 4rem 10% 4rem 10%;
   padding: 2rem;
-  background-color: rgba(255, 255, 255, 0.9);
+  background-color: rgb(255, 255, 255);
   border-radius: 0.25rem;
 }
 
@@ -652,13 +736,14 @@ footer {
 
 .home-page-text {
   margin: 0;
-  display: block;
+  display: inline-block;
 }
 
 
-@media (min-width: 40.19rem) {
+@media (min-width: 57.75rem) {
   .home-page-text {
-    margin-left: 4rem;
+    vertical-align: TOP;
+    margin-left: 2rem;
     margin-right: 1rem;
   }
   /* .front-trees-right {
@@ -667,6 +752,12 @@ footer {
   .front-trees-left {
     display: inline-block;
   } */
+}
+
+@media (min-width: 74rem) {
+  .home-page-text {
+    margin-left: 4rem;
+  }
 }
 
 /* responsive video code from https://benmarshall.me/responsive-iframes/*/
