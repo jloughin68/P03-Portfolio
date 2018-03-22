@@ -10,32 +10,63 @@
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/main.css" rel="stylesheet">
     <link href="css/fonts.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700|Roboto:300,400" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400" rel="stylesheet">
 
   </head>
 
   <body>
+    <div class="paper-background">
 
-    <div class="centered">
-      <h1>Style Guide</h1>
-    </div>
+      <img class= "perma-trees-left" src="img/front-trees-left.png" alt="trees on left side of the content">
+      <img class= "perma-trees-right" src="img/front-trees-right.png" alt="trees on right side of the content">
 
-    <nav class="centered">
-        <a href="#interactive_elements" class="button-nav">Interactive Elements</a>
-        <a href="#text_elements" class="button-nav">Text Elements</a>
-        <a href="#combined_elements" class="button-nav">Combined Elements</a>
-    </nav>
+      <header class="box-item-nav">
+        <nav class="nav-box">
+          <a class="header-button-nav" href="Index.html">home</a>
+          <a href="Index.html"><img src="img/home.svg" class="nav-icon" alt="placeholder"></a>
+
+          <a class="header-button-nav" href="Index.html#projects">projects</a>
+          <a href="Index.html#projects"><img src="img/projects.svg" class="nav-icon" alt="placeholder"></a>
+
+          <a class="header-button-nav active" href="Index.html#art">art</a>
+          <a href="Index.html#art"><img src="img/art.svg" class="nav-icon" alt="placeholder"></a>
+
+          <a class="header-button-nav" href="Index.html#about">about</a>
+          <a href="Index.html#about"><img src="img/about.svg" class="nav-icon" alt="placeholder"></a>
+
+          <a class="header-button-nav" href="Index.html#contact">contact</a>
+          <a href="Index.html#contact"><img src="img/contact.svg" class="nav-icon" alt="placeholder"></a>
+
+          <a href="Index.html" class="logo">jl</a>
+          <!-- <div class="hamburger-container" onclick="myFunction(this)">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+          </div> -->
+        </nav>
+      </header>
+
+      <div class="vertical-space-7"></div>
+
+      <div class="text-centered">
+        <h1>Style Guide</h1>
+        <nav>
+          <a href="#interactive_elements" class="button-nav">Interactive Elements</a>
+          <a href="#text_elements" class="button-nav">Text Elements</a>
+          <a href="#combined_elements" class="button-nav">Combined Elements</a>
+        </nav>
+      </div>
 
 
 
-    <!-- INTERACTIVE ELEMENTS SECTION // -->
-    <section id="interactive_elements">
-
-      <!-- Default Button styling section -->
-      <section class="blurb-box">
-        <div class="blurb-box-content">
+      <!-- INTERACTIVE ELEMENTS SECTION // -->
+      <section id="interactive_elements">
+        <!-- This is exactly the same as the nav button I actually use in my site (header-button-nav), just with colours you can actually see against the white, since header-button-nav will be in the header which is green -->
+        <div class="text-centered">
           <h2>Navigation Button</h2>
-
+        </div>
+        <div class="content-module">
           <h3>CSS selector:</h3>
           <ul>
             <li class="regular-text">.button-nav</p></li>
@@ -47,12 +78,11 @@
           <h3>Rendered element:</h3>
           <a class="button-nav" href="#">nav button</a>
         </div>
-      </section>
 
-      <section class="blurb-box">
-        <div class="blurb-box-content">
+        <div class="text-centered">
           <h2>In-text link</h2>
-
+        </div>
+        <div class="content-module">
           <h3>CSS selector:</h3>
           <ul>
             <li class="regular-text">.in-text-link</li>
@@ -64,36 +94,36 @@
           <h3>Rendered element:</h3>
           <p class="regular-text">Within a paragraph there will come a point at which there is a link. At that point, it'll say <a class="in-text-link" href="#">here's the link</a> and when you click on it, it'll do something! Who knows what? The possibilities are endless!</p>
         </div>
-      </section>
 
-      <section class="blurb-box">
-        <div class="blurb-box-content">
+
+        <div class="text-centered">
           <h2>Read More Button</h2>
+        </div>
+        <div class="content-module">
+          <h3>CSS selector:</h3>
+          <ul>
+            <li class="regular-text">.button-read-more</li>
+          </ul>
 
-            <h3>CSS selector:</h3>
-            <ul>
-              <li class="regular-text">.button-read-more</li>
-            </ul>
+          <h3>Sample code:</h3>
+          <code>&lt;a class=&quot;in-text-link&quot; href=&quot;#&quot;&gt;here's the link&lt;/a&gt;</code>
 
-            <h3>Sample code:</h3>
-            <code>&lt;a class=&quot;button-read-more&quot; href=&quot;#&quot;&gt;tell me more!&lt;/a&gt;</code>
+          <h3>Rendered element:</h3>
+           <a class="button-read-more" href="#">tell me more!</a>
+        </div>
 
-            <h3>Rendered element:</h3>
-             <a class="button-read-more" href="#">tell me more!</a>
-          </div>
       </section>
-
-    </section>
-    <!-- // INTERACTIVE ELEMENTS SECTION -->
+      <!-- // INTERACTIVE ELEMENTS SECTION -->
 
 
 
-    <!-- TEXT ELEMENTS SECTION // -->
-    <section id="text_elements">
+      <!-- TEXT ELEMENTS SECTION // -->
+      <section id="text_elements">
 
-      <section class="blurb-box">
-        <div class="blurb-box-content">
+        <div class="text-centered">
           <h2>Headings</h2>
+        </div>
+        <div class="content-module">
           <h3>CSS selector:</h3>
           <ul>
             <li class="regular-text">h1</li>
@@ -107,13 +137,15 @@
           <h3>Rendered element:</h3>
             <h1>First</h1>
             <h2>Second</h2>
+            <div class="vertical-space-10"></div>
             <h3>Third</h3>
         </div>
-      </section>
 
-      <section class="blurb-box">
-        <div class="blurb-box-content">
+
+        <div class="text-centered">
           <h2>Paragraphs</h2>
+        </div>
+        <div class="content-module">
           <h3>CSS selector:</h3>
           <ul>
             <li class="regular-text">.regular-text</li>
@@ -125,60 +157,60 @@
           <h3>Rendered element:</h3>
             <p class="regular-text">Thestral dirigible plums, Viktor Krum hexed memory charm Animagus Invisibility Cloak three-headed Dog. Half-Blood Prince Invisibility Cloak cauldron cakes, hiya Harry! Basilisk venom Umbridge swiveling blue eye Levicorpus, three-headed nitwit blubber oddment tweak. Chasers Winky quills The Boy Who Lived.</p>
         </div>
-        </div>
+
+
+          <div class="text-centered">
+            <h2>Bullet Lists</h2>
+          </div>
+          <div class="content-module">
+            <h3>CSS selector:</h3>
+            <ul>
+              <li class="regular-text">.regular-text</li>
+            </ul>
+
+            <h3>Sample code:</h3>
+            <code>&lt;ul&gt; <br> &lt;li class=&quot;regular-text&quot;&gt;I have a point&lt;/li&gt; <br> &lt;li class=&quot;regular-text&quot;&gt;And another point&lt;/li&gt; <br> &lt;li class=&quot;regular-text&quot;&gt;And yet another point&lt;/li&gt; <br> &lt;/ul&gt;</code>
+
+            <h3>Rendered element:</h3>
+            <ul>
+              <li class="regular-text">I have a point</li>
+              <li class="regular-text">And another point</li>
+              <li class="regular-text">And yet another point</li>
+            </ul>
+          </div>
+
+          <div class="text-centered">
+            <h2>Numbered Lists</h2>
+          </div>
+          <div class="content-module">
+            <h3>CSS selector:</h3>
+            <ul>
+              <li class="regular-text">.regular-text</li>
+            </ul>
+
+            <h3>Sample code:</h3>
+            <code>&lt;ol&gt; <br> &lt;li class=&quot;regular-text&quot;&gt;I have a point&lt;/li&gt; <br> &lt;li class=&quot;regular-text&quot;&gt;And a second point&lt;/li&gt; <br> &lt;li class=&quot;regular-text&quot;&gt;And a third even better point&lt;/li&gt; <br>&lt;/ol&gt;</code>
+
+            <h3>Rendered element:</h3>
+            <ol>
+              <li class="regular-text">I have a point</li>
+              <li class="regular-text">And a second point</li>
+              <li class="regular-text">And a third even better point</li>
+            </ol>
+          </div>
+
       </section>
-
-      <section class="blurb-box">
-        <div class="blurb-box-content">
-          <h2>Bulleted Lists</h2>
-          <h3>CSS selector:</h3>
-          <ul>
-            <li class="regular-text">.regular-text</li>
-          </ul>
-
-          <h3>Sample code:</h3>
-          <code>&lt;ul&gt; <br> &lt;li class=&quot;regular-text&quot;&gt;I have a point&lt;/li&gt; <br> &lt;li class=&quot;regular-text&quot;&gt;And another point&lt;/li&gt; <br> &lt;li class=&quot;regular-text&quot;&gt;And yet another point&lt;/li&gt; <br> &lt;/ul&gt;</code>
-
-          <h3>Rendered element:</h3>
-          <ul>
-            <li class="regular-text">I have a point</li>
-            <li class="regular-text">And another point</li>
-            <li class="regular-text">And yet another point</li>
-          </ul>
-        </div>
-      </section>
-
-      <section class="blurb-box">
-        <div class="blurb-box-content">
-          <h2>Numbered Lists</h2>
-          <h3>CSS selector:</h3>
-          <ul>
-            <li class="regular-text">.regular-text</li>
-          </ul>
-
-          <h3>Sample code:</h3>
-          <code>&lt;ol&gt; <br> &lt;li class=&quot;regular-text&quot;&gt;I have a point&lt;/li&gt; <br> &lt;li class=&quot;regular-text&quot;&gt;And a second point&lt;/li&gt; <br> &lt;li class=&quot;regular-text&quot;&gt;And a third even better point&lt;/li&gt; <br>&lt;/ol&gt;</code>
-
-          <h3>Rendered element:</h3>
-          <ol>
-            <li class="regular-text">I have a point</li>
-            <li class="regular-text">And a second point</li>
-            <li class="regular-text">And a third even better point</li>
-          </ol>
-        </div>
-      </section>
-
-    </section>
-    <!-- // TEXT ELEMENTS SECTION -->
+      <!-- // TEXT ELEMENTS SECTION -->
 
 
 
-    <!-- COMBINED ELEMENTS SECTION // -->
-    <section id="combined_elements">
+      <!-- COMBINED ELEMENTS SECTION // -->
+      <section id="combined_elements">
 
-      <section class="blurb-box">
-        <div class="blurb-box-content">
+        <div class="text-centered">
           <h2>Main Navigation</h2>
+        </div>
+        <div class="content-module">
           <h3>CSS selector:</h3>
           <ul>
             <li class="regular-text">.nav-box</li>
@@ -200,13 +232,12 @@
               <div class="bar3"></div>
             </div>
           </nav>
-
         </div>
-      </section>
 
-      <section class="blurb-box">
-        <div class="blurb-box-content">
+        <div class="text-centered">
           <h2>Project Listing</h2>
+        </div>
+        <div class="content-module">
           <h3>CSS selector:</h3>
           <ul>
             <li class="regular-text">.product-listing-box</li>
@@ -220,51 +251,53 @@
 
           <h3>Rendered element:</h3>
 
-          <div class="home-page-module box">
             <a href="#" class="project-listing box-item-image">
-              <img src="img/ribbonbound.jpg" alt="a ribbon-wrapped wizard">
+              <img src="img/ribbonbound.gif" alt="a ribbon-wrapped wizard">
               <h3 class="project-listing-title">ribbonbound</h3>
             </a>
             <a href="#" class="project-listing box-item-image">
-              <img src="img/crushed.jpeg" alt="two robots">
+              <img src="img/crushed.gif" alt="two robots">
               <h3 class="project-listing-title">crushed</h3>
             </a>
+        </div>
+
+
+          <div class="text-centered">
+            <h2>Color Palette</h2>
+          </div>
+          <div class="content-module">
+            <h3>CSS selector:</h3>
+              <ul>
+                <li class="regular-text">.palette</li>
+                <li class="regular-text">.swatch</li>
+                <li class="regular-text">.cream</li>
+                <li class="regular-text">.beige</li>
+                <li class="regular-text">.pink</li>
+                <li class="regular-text">...</li>
+              </ul>
+
+            <h3>Sample code:</h3>
+            <code>&lt;section class=&quot;palette&quot;&gt; <br> &lt;p class=&quot;swatch cream&quot;&gt;#E6E5DD&lt;/p&gt; <br> &lt;p class=&quot;swatch beige&quot;&gt;#B99785&lt;/p&gt; <br>&lt;p class=&quot;swatch pink&quot;&gt;#B46955&lt;/p&gt;<br> &lt;p class=&quot;swatch red&quot;&gt;#87231A&lt;/p&gt;<br> &lt;p class=&quot;swatch grey-green&quot;&gt;#B1B8A8&lt;/p&gt;<br> &lt;p class=&quot;swatch teal&quot;&gt;#416463&lt;/p&gt; <br>&lt;p class=&quot;swatch navy-grey&quot;&gt;#0B1517&lt;/p&gt;<br> &lt;/section&gt;</code>
+
+            <h3>Rendered element:</h3>
+            <div class="palette">
+                <p class="swatch cream">#E6E5DD</p>
+                <p class="swatch beige">#B99785</p>
+                <p class="swatch pink">#B46955</p>
+                <p class="swatch red">#87231A</p>
+                <p class="swatch grey-green">#B1B8A8</p>
+                <p class="swatch teal">#416463</p>
+                <p class="swatch navy-grey">#0B1517</p>
+            </div>
           </div>
 
-      </section>
+        </section>
 
-      <section class="blurb-box">
-        <div class="blurb-box-content">
-          <h2>Colour Palette</h2>
-          <h3>CSS selector:</h3>
-            <ul>
-              <li class="regular-text">.palette</li>
-              <li class="regular-text">.swatch</li>
-              <li class="regular-text">.cream</li>
-              <li class="regular-text">.beige</li>
-              <li class="regular-text">.pink</li>
-              <li class="regular-text">...</li>
-            </ul>
+        <footer>
+          <p class="footer-text">visit my portfolio site <a href="Index.html" class="in-text-link">here</a></p>
+        </footer>
 
-          <h3>Sample code:</h3>
-          <code>&lt;section class=&quot;palette&quot;&gt; <br> &lt;p class=&quot;swatch cream&quot;&gt;#E6E5DD&lt;/p&gt; <br> &lt;p class=&quot;swatch beige&quot;&gt;#B99785&lt;/p&gt; <br>&lt;p class=&quot;swatch pink&quot;&gt;#B46955&lt;/p&gt;<br> &lt;p class=&quot;swatch red&quot;&gt;#87231A&lt;/p&gt;<br> &lt;p class=&quot;swatch grey-green&quot;&gt;#B1B8A8&lt;/p&gt;<br> &lt;p class=&quot;swatch teal&quot;&gt;#416463&lt;/p&gt; <br>&lt;p class=&quot;swatch navy-grey&quot;&gt;#0B1517&lt;/p&gt;<br> &lt;/section&gt;</code>
-
-          <h3>Rendered element:</h3>
-          <section class="palette">
-              <p class="swatch cream">#E6E5DD</p>
-              <p class="swatch beige">#B99785</p>
-              <p class="swatch pink">#B46955</p>
-              <p class="swatch red">#87231A</p>
-              <p class="swatch grey-green">#B1B8A8</p>
-              <p class="swatch teal">#416463</p>
-              <p class="swatch navy-grey">#0B1517</p>
-          </section>
-        </div>
-      </section>
-
-    <footer>
-      <p class="footer-text">footer content</p>
-    </footer>
+    </div>
 
     <script src="javascript.js"></script>
 

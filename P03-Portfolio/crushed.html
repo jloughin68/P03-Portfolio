@@ -11,194 +11,177 @@
     <link href="css/flexbox.css" rel="stylesheet">
     <link href="css/fonts.css" rel="stylesheet">
     <link href="css/main.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700|Roboto:300,400" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400" rel="stylesheet">
 
   </head>
 
-  <body class="paper-background">
-    <img class="front-trees-left" src="img/front-trees-left.png" alt="trees on left side of the content">
-    <img class="front-trees-right" src="img/front-trees-right.png" alt="trees on right side of the content">
+  <div class="paper-background">
+    <img class= "perma-trees-left" src="img/front-trees-left.png" alt="trees on left side of the content">
+    <img class= "perma-trees-right" src="img/front-trees-right.png" alt="trees on right side of the content">
 
     <header class="box-item-nav">
       <nav class="nav-box">
         <a class="header-button-nav" href="Index.html">home</a>
-        <a class="header-button-nav" href="Index.html#about">about</a>
+        <a href="Index.html"><img src="img/home.svg" class="nav-icon" alt="placeholder"></a>
+
         <a class="header-button-nav" href="Index.html#projects">projects</a>
+        <a href="Index.html#projects"><img src="img/projects.svg" class="nav-icon" alt="placeholder"></a>
+
         <a class="header-button-nav active" href="Index.html#art">art</a>
+        <a href="Index.html#art"><img src="img/art.svg" class="nav-icon" alt="placeholder"></a>
+
+        <a class="header-button-nav" href="Index.html#about">about</a>
+        <a href="Index.html#about"><img src="img/about.svg" class="nav-icon" alt="placeholder"></a>
+
         <a class="header-button-nav" href="Index.html#contact">contact</a>
-        <a href="index.html" class="logo">jl</a>
-        <div class="hamburger-container" onclick="myFunction(this)">
+        <a href="Index.html#contact"><img src="img/contact.svg" class="nav-icon" alt="placeholder"></a>
+
+        <a href="Index.html" class="logo">jl</a>
+        <!-- <div class="hamburger-container" onclick="myFunction(this)">
           <div class="bar1"></div>
           <div class="bar2"></div>
           <div class="bar3"></div>
-        </div>
+        </div> -->
       </nav>
     </header>
 
     <div class="vertical-space-12"></div>
 
-    <div class="centered">
-      <h1>Crushed</h1>
+    <div class="text-centered">
+      <h1 class="project-h1">Crushed</h1>
     </div>
 
-    <div class="centered project-intro">
-      <p class="regular-text">A short film about a little robot's adventure, created by a team of five with Autodesk Maya over two months.</p>
-    </div>
+    <p class="text-centered project-intro regular-text">A short animated film about a little robot's adventure, created by a team of five with Autodesk Maya over two months.</p>
 
-    <section class="project-module">
-      <div class="intrinsic-container intrinsic-container-16x9 centered">
+    <div class="content-module-wide">
+      <div class="intrinsic-container intrinsic-container-16x9">
         <iframe src="https://www.youtube.com/embed/j_bbGqYltxQ" allowfullscreen></iframe>
       </div>
-    </section>
+    </div>
 
     <div class="vertical-space-5"></div>
 
-    <div class="centered">
+    <div class="text-centered">
       <h2>the team</h2>
     </div>
 
-    <section class="box project-module">
-      <div class="half-column team">
-        <h3>Quinn MacDonald</h3>
-        <ul>
-          <li class="regular-text">Worldbuilding, organization</li>
-          <li class="regular-text">Character modelling, texturing, rigging</li>
-        </ul>
-        <h3>Rajvir Chana</h3>
-        <ul>
-          <li class="regular-text">Environment modelling & texturing</li>
-          <li class="regular-text">Animation, rendering, & post production</li>
-        </ul>
-        <h3>Juliana Loughin</h3>
-        <ul>
-          <li class="regular-text">Environment modelling, texturing, & lighting</li>
-          <li class="regular-text">Animation, rendering, post-production, & sound design</li>
-        </ul>
-        <h3>Eleanor Mou</h3>
-        <ul>
-          <li class="regular-text">Title Sequence</li>
-        </ul>
-        <h3>Rozhin Kardan</h3>
-        <ul>
-          <li class="regular-text">Asset gathering (sounds)</li>
-        </ul>
-      </div>
+    <section class="content-module">
+      <h3>Quinn MacDonald</h3>
+      <ul>
+        <li class="regular-text">Character modelling, texturing, rigging</li>
+        <li class="regular-text">Animation, rendering, & post-production</li>
+      </ul>
+      <h3>Rajvir Chana</h3>
+      <ul>
+        <li class="regular-text">Environment modelling & texturing</li>
+        <li class="regular-text">Animation, rendering, & post production</li>
+      </ul>
+      <h3>Juliana Loughin</h3>
+      <ul>
+        <li class="regular-text">Environment modelling, texturing, & lighting</li>
+        <li class="regular-text">Animation, rendering, post-production, & sound design</li>
+      </ul>
+      <h3>Eleanor Mou</h3>
+      <ul>
+        <li class="regular-text">Title Sequence</li>
+      </ul>
+      <h3>Rozhin Kardan</h3>
+      <ul>
+        <li class="regular-text">Asset gathering (sounds)</li>
+      </ul>
     </section>
 
     <div class="vertical-space-5"></div>
 
-    <div class="centered">
+    <div class="text-centered">
       <h2>pre-production</h2>
     </div>
 
-    <section class="box project-module">
-      <div class="half-column margin-auto">
-        <img src="img/robots-concept.png" alt="placeholder image" class="project-photo box-item-image">
-        <div class="project-text box-item-text">
-          <h3 class="project-h3">Script, Concept Art, & Precedents</h3>
-          <p class="regular-text">I wrote a script based on Quinn’s concept of a little robot’s journey; meanwhile, Quinn created the concept art, and the other members found precedents for style and story in Wall-e and The Last Bastion.</p>
-        </div>
-      </div>
+    <section class="content-module">
+        <img src="img/robots-concept.png" alt="placeholder image" class="project-photo">
+        <h3 class="project-h3">Script, Concept Art, & Precedents</h3>
+        <p class="regular-text">I wrote a script based on Quinn’s concept of a little robot’s journey; meanwhile, Quinn created the concept art, and the other members found precedents for style and story in Wall-e and The Last Bastion.</p>
     </section>
 
-    <section class="box project-module">
-      <div class="half-column margin-auto">
-        <img src="img/storyboard.gif" alt="placeholder image" class="project-photo box-item-image">
-        <div class="project-text box-item-text">
-          <h3 class="project-h3">Shot-List & Storyboard</h3>
-          <p class="regular-text">Next, I led the team in creating a shot-list, and Quinn painted our storyboard based upon it; I wrote the voice-over, and the others assembled our <a href="https://vimeo.com/238883696" class="in-text-link">storyboard video</a>.</p>
+    <section class="content-module">
+        <img src="img/storyboard.gif" alt="placeholder image" class="project-photo">
+        <h3 class="project-h3">Shot-List & Storyboard</h3>
+        <p class="regular-text">Next, I led the team in creating a shot-list, and Quinn painted our storyboard based upon it; I wrote the voice-over, and the others assembled our storyboard video.</p>
+        <div class="vertical-space-2"></div>
+        <div class="intrinsic-container intrinsic-container-16x9 centered">
+          <iframe src="https://player.vimeo.com/video/238883696" allowfullscreen></iframe>
         </div>
-      </div>
     </section>
 
-    <section class="box project-module">
-      <div class="half-column margin-auto">
-        <section class="photo-grid-box box">
-          <div class="third-column">
-            <img src="img/small-robot.png" alt="placeholder" class="painting">
-            <img src="img/upstairs-environment.png" alt="placeholder" class="painting">
-          </div>
-          <div class="third-column">
-            <img src="img/large-robot.png" alt="placeholder" class="painting">
-          </div>
-          <div class="third-column">
-            <img src="img/downstairs-environment.jpeg" alt="placeholder" class="painting">
-          </div>
-        </section>
-        <div class="project-text box-item-text">
-          <h3 class="project-h3">Animatic</h3>
-          <p class="regular-text">Quinn modelled and textured our characters while Rajvir and I modelled, textured, and lit our environment. The three of us then blocked out basic character movement, took still frames, and assembled the <a href="https://vimeo.com/243418947" class="in-text-link">video</a>.</p>
-        </div>
+    <section class="content-module">
+      <div class="slider">
+        <img src="img/small-robot.png" alt="placeholder" class="slider-img">
+        <img src="img/large-robot.png" alt="placeholder" class="slider-img">
+        <img src="img/upstairs-environment.png" alt="placeholder" class="slider-img">
+        <img src="img/downstairs-environment.jpeg" alt="placeholder" class="slider-img">
+      </div>
+      <h3 class="project-h3">Animatic</h3>
+      <p class="regular-text">Quinn modelled and textured our characters while Rajvir and I modelled, textured, and lit our environments. The three of us then blocked out basic character movement, took still frames, and assembled the animatic video.</p>
+      <div class="vertical-space-2"></div>
+      <div class="intrinsic-container intrinsic-container-16x9 centered">
+        <iframe src="https://player.vimeo.com/video/238883696" allowfullscreen></iframe>
       </div>
     </section>
 
     <div class="vertical-space-5"></div>
 
-    <div class="centered">
+    <div class="text-centered">
       <h2>production</h2>
     </div>
 
-    <section class="box project-module">
-      <div class="half-column margin-auto">
-        <h3 class="project-h3">Animation & Communication</h3>
-        <p class="regular-text">As Quinn, Rajvir, and I animated the film, sending our animations back and forth over a group chat in <a href="https://youtu.be/fHjVjzMVdeY" class="in-text-link">screen-capture videos</a> for critique. I discovered through this process that I enjoy animation greatly, as it reminds me of musical composition.</p>
+
+    <section class="content-module">
+      <div class="intrinsic-container intrinsic-container-16x9 centered">
+        <iframe src="https://www.youtube.com/embed/fHjVjzMVdeY" allowfullscreen></iframe>
       </div>
+      <h3 class="project-h3">Animation & Communication</h3>
+      <p class="regular-text">Quinn, Rajvir, and I animated the film, sending our animations back and forth over a group chat in screen-capture videos for critique. I discovered through this process that I enjoy animation greatly, as it reminds me of musical composition.</p>
     </section>
 
-    <section class="box project-module">
-      <div class="half-column margin-auto">
-        <img src="img/rendering-farm.jpeg" alt="placeholder image" class="project-photo box-item-image">
-        <div class="project-text box-item-text">
-          <h3 class="project-h3">Rendering & Roadblocks</h3>
-          <p class="regular-text">In this stage, we came across some two issues: first, the reflectivity of the materials and the soft shadows meant that rendering took over 24 hours across many computers. And second the small robot’s eye stopped glowing in some shots of the last scene. We made this discovery after it was too late to re-render the scene—this was a learning experience for us, and a mistake that we will not repeat.</p>
-        </div>
-      </div>
+    <section class="content-module">
+      <img src="img/rendering-farm.jpeg" alt="placeholder image" class="project-photo box-item-image">
+      <h3 class="project-h3">Rendering & Roadblocks</h3>
+      <p class="regular-text">In this stage, we came across some two issues: first, the reflectivity of the materials and the soft shadows meant that rendering took over 24 hours across many computers. And second the small robot’s eye stopped glowing in some shots of the last scene. We made this discovery after it was too late to re-render the scene—this was a learning experience for us, and a mistake that we will not repeat.</p>
     </section>
 
     <div class="vertical-space-5"></div>
 
-    <div class="centered">
-      <h2>Post-Production</h2>
+    <div class="text-centered">
+      <h2>post-production</h2>
     </div>
 
-    <section class="box project-module">
-      <div class="half-column margin-auto">
-        <h3 class="project-h3">Effects</h3>
-        <p class="regular-text">With one day left to finish our film, Quinn worked on the colour correcting and spark effects, using me as a second pair of eyes.</p>
-      </div>
+    <section class="content-module">
+      <h3 class="project-h3">Effects</h3>
+      <p class="regular-text">With one day left to finish our film, Quinn worked on the colour correcting and spark effects, using me as a second pair of eyes.</p>
     </section>
 
-    <section class="box project-module">
-      <div class="half-column margin-auto">
-        <h3 class="project-h3">Sound</h3>
-        <p class="regular-text">I led the sound design process; I discovered throughout this aspect of the project that sound design is far more involved for an animated short than for live-action, since there is absolutely no native sound to manipulate.</p>
-      </div>
+    <section class="content-module">
+      <h3 class="project-h3">Sound</h3>
+      <p class="regular-text">I led the sound design process; I discovered throughout this aspect of the project that sound design is far more involved for an animated short than for live-action, since there is absolutely no native sound to manipulate.</p>
     </section>
 
 
     <div class="vertical-space-5"></div>
 
-    <div class="centered">
+    <div class="text-centered">
       <h2>takeaways</h2>
     </div>
 
-    <section class="box project-module">
-      <div class="half-column margin-auto">
-        <div class="project-text box-item-text">
-          <p class="regular-text">One vital thing that I took away from this project was that I do not always need to be in control in order to be happy with a final product; until I worked on Crushed with Quinn, I hadn’t been part of a team dynamic in which I was not the leader. I found the experience rather freeing, and it has allowed me to let go of some of my need for control in group projects.</p>
-        </div>
-      </div>
-    </section>
-
-    <section class="box project-module">
-      <div class="box-item-image">
-        <img src="img/end-image.jpeg" alt="a screenshot from our final film which echoes one of our very first concept sketches">
-      </div>
-    </section>
+    <div class="content-module">
+      <img src="img/end-image.jpeg" alt="a screenshot from our final film which echoes one of our very first concept sketches" class="project-photo">
+      <p class="regular-text">One vital thing that I took away from this project was that I do not always need to be in control in order to be happy with a final product; until I worked on Crushed with Quinn, I hadn’t been part of a team dynamic in which I was not the leader. I found the experience rather freeing, and it has allowed me to let go of some of my need for control in group projects.</p>
+    </div>
 
     <footer>
-      <p class="footer-text">footer content</p>
+      <p class="footer-text">visit my style guide <a href="Styleguide.html" class="in-text-link">here</a></p>
     </footer>
 
+    </div>
   </body>
 </html>

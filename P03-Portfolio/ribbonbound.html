@@ -1,4 +1,4 @@
-margin-auto<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 
   <head>
@@ -11,220 +11,180 @@ margin-auto<!DOCTYPE html>
     <link href="css/flexbox.css" rel="stylesheet">
     <link href="css/fonts.css" rel="stylesheet">
     <link href="css/main.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700|Roboto:300,400" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400" rel="stylesheet">
 
   </head>
 
-  <body class="paper-background">
-    <img class="front-trees-left" src="img/front-trees-left.png" alt="trees on left side of the content">
-    <img class="front-trees-right" src="img/front-trees-right.png" alt="trees on right side of the content">
+  <body>
+    <div class="paper-background">
+      <img class= "perma-trees-left" src="img/front-trees-left.png" alt="trees on left side of the content">
+      <img class= "perma-trees-right" src="img/front-trees-right.png" alt="trees on right side of the content">
 
-    <header class="box-item-nav">
-      <nav class="nav-box">
-        <a class="header-button-nav" href="Index.html">home</a>
-        <a class="header-button-nav" href="Index.html#about">about</a>
-        <a class="header-button-nav" href="Index.html#projects">projects</a>
-        <a class="header-button-nav active" href="Index.html#art">art</a>
-        <a class="header-button-nav" href="Index.html#contact">contact</a>
-        <a href="index.html" class="logo">jl</a>
-        <div class="hamburger-container" onclick="myFunction(this)">
+      <header class="box-item-nav">
+        <nav class="nav-box">
+          <a class="header-button-nav" href="Index.html">home</a>
+          <a href="Index.html"><img src="img/home.svg" class="nav-icon" alt="placeholder"></a>
+
+          <a class="header-button-nav" href="Index.html#projects">projects</a>
+          <a href="Index.html#projects"><img src="img/projects.svg" class="nav-icon" alt="placeholder"></a>
+
+          <a class="header-button-nav active" href="Index.html#art">art</a>
+          <a href="Index.html#art"><img src="img/art.svg" class="nav-icon" alt="placeholder"></a>
+
+          <a class="header-button-nav" href="Index.html#about">about</a>
+          <a href="Index.html#about"><img src="img/about.svg" class="nav-icon" alt="placeholder"></a>
+
+          <a class="header-button-nav" href="Index.html#contact">contact</a>
+          <a href="Index.html#contact"><img src="img/contact.svg" class="nav-icon" alt="placeholder"></a>
+
+          <a href="Index.html" class="logo">jl</a>
+          <!-- <div class="hamburger-container" onclick="myFunction(this)">
           <div class="bar1"></div>
           <div class="bar2"></div>
           <div class="bar3"></div>
+        </div> -->
+        </nav>
+      </header>
+
+        <div class="vertical-space-12"></div>
+
+        <div class="text-centered">
+          <h1>Ribbonbound</h1>
         </div>
-      </nav>
-    </header>
 
-    <div class="vertical-space-12"></div>
 
-    <div class="centered">
-      <h1>Ribbonbound</h1>
-    </div>
+        <p class="text-centered project-intro regular-text">A multi-linear point-and-click experience with a painterly style and a whimsical urban fantasy theme, created by a team of two over three months.</p>
 
-    <div class="centered project-intro">
-      <p class="regular-text">A multi-linear point-and-click experience with a painterly style and a whimsical urban fantasy theme, created by a team of two over three months. View it <a href="http://www.sfu.ca/~dominicq/pub_html/Ribbonbound/" class="in-text-link" target="_blank">here</a>.</p>
-    </div>
+        <div class="content-module-wide centered">
+          <div class="intrinsic-container intrinsic-container-16x9 centered">
+            <iframe src="http://www.sfu.ca/~dominicq/pub_html/Ribbonbound/" allowfullscreen></iframe>
+            <!-- some sources are telling me to put alternate text here for browsers that don't render iFrame, but it's coming up as an error so it's commented out for now -->
+            <!-- <p>View it <a href="http://www.sfu.ca/~dominicq/pub_html/Ribbonbound/" class="in-text-link" target="_blank">here</a>.</p> -->
+          </div>
+        </div>
 
-    <section class="box project-module">
-      <div class="box-item-image">
-        <img src="img/ribbonbound-main-image.png" alt="a dim city street with a violin player">
-      </div>
-    </section>
+        <div class="vertical-space-5"></div>
 
-    <div class="vertical-space-5"></div>
+        <div class="text-centered">
+          <h2>the team</h2>
+        </div>
 
-    <div class="centered">
-      <h2>the team</h2>
-    </div>
 
-    <section class="box project-module">
-      <div class="half-column team">
-        <h3>Dominic (Dom) Quon</h3>
-        <ul>
-          <li class="regular-text">Worldbuilding, organization</li>
-          <li class="regular-text">Environment painting, animation</li>
-          <li class="regular-text">HTML & JavaScript</li>
-        </ul>
-        <h3>Juliana Loughin</h3>
-        <ul>
-          <li class="regular-text">Worldbuilding, story mapping, dialogue writing, character design</li>
-          <li class="regular-text">Character & interactable object painting, animation</li>
-          <li class="regular-text">Music & sound design</li>
-        </ul>
-      </div>
-    </section>
+        <section class="content-module centered">
+          <h3 class="text-centered">Dominic (Dom) Quon</h3>
+          <ul>
+            <li class="regular-text">Worldbuilding, organization</li>
+            <li class="regular-text">Environment painting, animation</li>
+            <li class="regular-text">HTML & JavaScript</li>
+          </ul>
+          <h3 class="text-centered">Juliana Loughin</h3>
+          <ul>
+            <li class="regular-text">Worldbuilding, story mapping, dialogue writing, character design</li>
+            <li class="regular-text">Character & interactable object painting, animation</li>
+            <li class="regular-text">Music & sound design</li>
+          </ul>
+        </section>
 
-    <div class="vertical-space-5"></div>
 
-    <div class="centered">
-      <h2>pre-production</h2>
-    </div>
+        <div class="vertical-space-5"></div>
 
-    <section class="box project-module">
-      <div class="half-column margin-auto">
-        <h3 class="project-h3">Concept</h3>
-        <p class="regular-text">We adapted a story I had already written for film into an interactive medium: a post-apocalyptic, urban version of Hans Christian Anderson’s The Red Shoes, replete with hints of Irish folklore.</p>
-      </div>
-    </section>
+        <div class="text-centered">
+          <h2>pre-production</h2>
+        </div>
 
-    <section class="box project-module">
-      <div class="half-column margin-auto">
-        <h3 class="project-h3">Bible</h3>
-        <p class="regular-text">We created a detailed write-up specifying story world and characters; I led this process, as I was the practiced storyteller in the group, and love world building and character design.</p>
-      </div>
-    </section>
+        <section class="content-module">
+          <h3 class="project-h3">Concept</h3>
+          <p class="regular-text">We adapted a story I had already written for film into an interactive medium: a post-apocalyptic, urban version of Hans Christian Anderson’s The Red Shoes, replete with hints of Irish folklore.</p>
+        </section>
 
-    <section class="box project-module">
-      <div class="half-column margin-auto">
-        <h3 class="project-h3">Design Document</h3>
-        <p class="regular-text">We compiled a detailed list of every environment, character, and object, their functionalities within the story, and the assets we would need to represent them.</p>
-      </div>
-    </section>
+        <section class="content-module">
+          <h3 class="project-h3">Bible</h3>
+          <p class="regular-text">We created a detailed write-up specifying story world and characters; I led this process, as I was the practiced storyteller in the group, and love world building and character design.</p>
+        </section>
 
-    <section class="box project-module">
-      <div class="half-column margin-auto">
-        <img src="img/script.png" alt="placeholder image" class="project-photo box-item-image">
-        <div class="project-text box-item-text">
+        <section class="content-module">
+          <h3 class="project-h3">Design Document</h3>
+          <p class="regular-text">We compiled a detailed list of every environment, character, and object, their functionalities within the story, and the assets we would need to represent them.</p>
+        </section>
+
+        <section class="content-module">
+          <img src="img/script.png" alt="placeholder image" class="project-photo">
           <h3 class="project-h3">Script</h3>
           <p class="regular-text">The script was my responsibility, as I love to write dialogue; writing Irvin’s lines in particular gave me a chance to be creative and whimsical.</p>
-        </div>
-      </div>
-    </section>
-
-    <section class="box project-module">
-      <div class="half-column margin-auto">
-        <img src="img/flowchart.jpg" alt="placeholder image" class="project-photo box-item-image">
-        <div class="project-text box-item-text">
-          <h3 class="project-h3">Flow chart</h3>
-          <p class="regular-text">In order to spatially represent the paths a player could take through the story, I drafted a flow chart and Dom made it presentable.</p>
-        </div>
-      </div>
-    </section>
-
-    <section class="box project-module">
-      <div class="half-column margin-auto">
-        <section class="photo-grid-box box">
-          <div class="third-column">
-            <img src="img/irvin-concept.jpg" alt="placeholder" class="painting">
-            <img src="img/street1-concept.jpg" alt="placeholder" class="painting">
-          </div>
-          <div class="third-column">
-            <img src="img/lugh-concept.jpg" alt="placeholder" class="painting">
-            <img src="img/street1-concept.jpg" alt="placeholder" class="painting">
-          </div>
-          <div class="third-column">
-            <img src="img/building-concept.jpg" alt="placeholder" class="painting">
-          </div>
         </section>
-        <div class="project-text box-item-text">
+
+        <section class="content-module">
+          <img src="img/flowchart.jpg" alt="placeholder image" class="project-photo">
+          <h3 class="project-h3">Flow Chart</h3>
+          <p class="regular-text">In order to spatially represent the paths a player could take through the story, I drafted a flow chart and Dom made it presentable.</p>
+        </section>
+
+        <section class="content-module">
+          <div class="slider">
+            <img src="img/irvin-concept.jpg" alt="placeholder" class="slider-img">
+            <img src="img/lugh-concept.jpg" alt="placeholder" class="slider-img">
+            <img src="img/building-concept.jpg" alt="placeholder" class="slider-img">
+            <img src="img/street1-concept.jpg" alt="placeholder" class="slider-img">
+            <img src="img/street1-concept.jpg" alt="placeholder" class="slider-img">
+          </div>
           <h3 class="project-h3">Concept Art</h3>
           <p class="regular-text">I created the character concept art, while Dom drafted the environments.</p>
-        </div>
-      </div>
-    </section>
+        </section>
 
-    <section class="box project-module">
-      <div class="half-column margin-auto">
-        <img src="img/storyboard.jpg" alt="placeholder image" class="project-photo box-item-image">
-        <div class="project-text box-item-text">
+        <section class="content-module">
+          <img src="img/storyboard.jpg" alt="placeholder image" class="project-photo">
           <h3 class="project-h3">Storyboard</h3>
           <p class="regular-text">We adapted our flow chart in a visual, easy-to-parse way that acted as a rough first draft to our final work.</p>
-        </div>
-      </div>
-    </section>
-
-    <div class="vertical-space-5"></div>
-
-    <div class="centered">
-      <h2>production</h2>
-    </div>
-
-    <section class="box project-module">
-      <div class="half-column margin-auto">
-        <section class="photo-grid-box box">
-          <div class="third-column">
-            <img src="img/crow.png" alt="placeholder" class="painting">
-            <img src="img/bookshop.png" alt="placeholder" class="painting">
-          </div>
-          <div class="third-column">
-            <img src="img/lugh.png" alt="placeholder" class="painting">
-            <img src="img/selfish-ending.jpg" alt="placeholder" class="painting">
-          </div>
-          <div class="third-column">
-            <img src="img/irvin.png" alt="placeholder" class="painting">
-          </div>
         </section>
-        <div class="project-text box-item-text">
+
+        <div class="vertical-space-5"></div>
+
+        <div class="text-centered">
+          <h2>production</h2>
+        </div>
+
+        <section class="content-module">
+          <div class="slider">
+            <img src="img/crow.png" alt="placeholder" class="slider-img">
+            <img src="img/irvin.png" alt="placeholder" class="slider-img">
+            <img src="img/lugh.png" alt="placeholder" class="slider-img">
+            <img src="img/selfish-ending.jpg" alt="placeholder" class="slider-img">
+            <img src="img/bookshop.png" alt="placeholder" class="slider-img">
+          </div>
           <h3 class="project-h3">Painting</h3>
           <p class="regular-text">Dom worked with my feedback to refine the backgrounds, while, I painted the characters and objects. This was the most difficult portion of the project, as we had to meld together our two painting styles and match our lighting.</p>
-        </div>
+        </section>
+
+        <section class="content-module">
+          <!-- <audio controls>
+          <source src="horse.ogg" type="audio/ogg">
+          <source src="horse.mp3" type="audio/mpeg">
+          Your browser does not support the audio element.
+        </audio> -->
+        <h3 class="project-h3">Sound</h3>
+        <p class="regular-text">I arranged a medley of fiddle tunes, played it, recorded it, edited it, and mixed it with different sounds for each environment.</p>
+      </section>
+
+      <section class="content-module">
+        <h3 class="project-h3">Animation & Assembly</h3>
+        <p class="regular-text">We ran panels of the environment paintings through AfterEffects and turned them into looping subtle animations which would help to bring our story world to life. Then I wrote the content for the books of the bookstore while Dom put the final touches on the website.</p>
+      </section>
+
+      <div class="vertical-space-5"></div>
+
+      <div class="text-centered">
+        <h2>takeaways</h2>
       </div>
-    </section>
 
-    <section class="box project-module">
-      <div class="half-column margin-auto">
-        <div class="project-text box-item-text">
-          <h3 class="project-h3">Sound</h3>
-          <p class="regular-text">I arranged a medley of fiddle tunes, played it, recorded it, edited it, and mixed it with different sounds for each environment.</p>
-        </div>
+      <div class="content-module">
+        <p class="regular-text">While Dom and I are very proud of what we were able to create with less than three months of work, we very much view Ribbonbound as a prototype. User surveys we took revealed some weaknesses in the navigability of the story, which we will remedy if we seek to update this story someday, which we very well may, as we believe we created an interesting story worth exploring further.</p>
       </div>
-    </section>
 
-    <section class="box project-module">
-      <div class="half-column margin-auto">
-        <div class="project-text box-item-text">
-          <h3 class="project-h3">Code</h3>
-          <p class="regular-text">While I was working on sound, Dom diligently worked at learning JavaScript in order to bring interactions to our story.</p>
-        </div>
-      </div>
-    </section>
-
-    <section class="box project-module">
-      <div class="half-column margin-auto">
-        <div class="project-text box-item-text">
-          <h3 class="project-h3">Animation & Assembly</h3>
-          <p class="regular-text">We ran panels of the environment paintings through AfterEffects and turned them into looping subtle animations which would help to bring our story world to life. Then I wrote the content for the books of the bookstore while Dom put the final touches on the website.</p>
-        </div>
-      </div>
-    </section>
-
-    <div class="vertical-space-5"></div>
-
-    <div class="centered">
-      <h2>takeaways</h2>
     </div>
 
-    <section class="box project-module">
-      <div class="half-column centered">
-        <div class="project-text box-item-text">
-          <p class="regular-text">While Dom and I are very proud of what we were able to create with less than three months of work, we very much view Ribbonbound as a prototype. User surveys we took revealed some weaknesses in the navigability of the story, which we will remedy if we seek to update this story someday, which we very well may, as we believe we created an interesting story worth exploring further.</p>
-        </div>
-      </div>
-    </section>
-
     <footer>
-      <p class="footer-text">footer content</p>
+      <p class="footer-text">visit my style guide <a href="Styleguide.html" class="in-text-link">here</a></p>
     </footer>
-
   </body>
 </html>
