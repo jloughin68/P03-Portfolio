@@ -422,8 +422,8 @@ div {
   letter-spacing: 0.1rem;
   color: white;
   position: absolute;
-  top: 1rem;
-  left: 1rem;
+  top: 1.5rem;
+  right: 1.5rem;
   margin: 0;
   padding: 0.5rem 0 0.5rem 0;
 }
