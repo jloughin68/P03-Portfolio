@@ -19,49 +19,37 @@
   <body>
     <div class="background">
 
-      <img class= "front-trees-left" src="img/front-trees-left.png" alt="trees on left side of the content">
-      <img class= "front-trees-right" src="img/front-trees-right.png" alt="trees on right side of the content">
-
       <header class="box-item-nav">
         <nav class="nav-box">
           <a class="header-button-nav" href="#">top</a>
-          <a href="#"><img src="img/home.svg" class="nav-icon" alt="placeholder"></a>
+          <a href="#"><img src="img/home.svg" class="nav-icon" alt="icon of a house" aria-hidden="true"></a>
 
-          <a class="header-button-nav" href="#projects">projects</a>
-          <a href="#projects"><img src="img/projects.svg" class="nav-icon" alt="placeholder"></a>
+          <a class="header-button-nav" href="#projects">work</a>
+          <a href="#projects"><img src="img/projects.svg" class="nav-icon" alt="icon of a briefcase" aria-hidden="true"></a>
 
           <a class="header-button-nav active" href="#art">art</a>
-          <a href="#art"><img src="img/art.svg" class="nav-icon" alt="placeholder"></a>
+          <a href="#art"><img src="img/art.svg" class="nav-icon" alt="icon of art supplies" aria-hidden="true"></a>
 
           <a class="header-button-nav" href="#about">about</a>
-          <a href="#about"><img src="img/about.svg" class="nav-icon" alt="placeholder"></a>
+          <a href="#about"><img src="img/about.svg" class="nav-icon" alt="icon of a person with long hair" aria-hidden="true"></a>
 
           <a class="header-button-nav" href="#contact">contact</a>
-          <a href="#contact"><img src="img/contact.svg" class="nav-icon" alt="placeholder"></a>
+          <a href="#contact"><img src="img/contact.svg" class="nav-icon" alt="icon of a sealed envelope" aria-hidden="true"></a>
 
           <a href="Index.html" class="logo">jl</a>
-          <!-- <div class="hamburger-container" onclick="myFunction(this)">
-            <div class="bar1"></div>
-            <div class="bar2"></div>
-            <div class="bar3"></div>
-          </div> -->
         </nav>
       </header>
 
       <div class="vertical-space-7"></div>
 
-      <div class="text-centered">
-        <h1>Jules</h1>
-        <h3 class="home-h3">artist, designer, storyteller.</h3>
-      </div>
+        <h1 class="text-centered">Jules</h1>
+        <h3 class="home-h3 text-centered">artist, designer, storyteller.</h3>
 
       <div class="vertical-space-12"></div>
       <div class="vertical-space-7"></div>
 
       <section id="projects">
-        <div class="text-centered">
-          <h2>projects</h2>
-        </div>
+        <h2 class="text-centered">projects</h2>
         <div class="content-module">
             <a href="ribbonbound.html" class="project-listing p1-margin">
               <h3 class="project-listing-title">ribbonbound</h3>
@@ -69,7 +57,7 @@
             </a>
             <a href="crushed.html" class="project-listing">
               <h3 class="project-listing-title">crushed</h3>
-              <img src="img/crushed.gif" alt="two robots">
+              <img src="img/crushed.gif" alt="two robots, one staring up at the other">
             </a>
         </div>
       </section>
@@ -77,79 +65,174 @@
       <div class="vertical-space-10"></div>
 
       <section id="art">
-        <div class="text-centered">
-          <h2>art</h2>
-        </div>
+        <h2 class="text-centered">art</h2>
+
+        <!-- I decided not to put aria-hidden stuff on the sliders or the lightboxes since all content is technically accessible, and no new content appears with the targeted lightboxes -->
 
         <div class="content-module">
           <img src="img/left-arrow.svg" alt="left arrow" class="slider-arrow-left">
-          <img src="img/right-arrow.svg" alt="left arrow" class="slider-arrow-right">
+          <img src="img/right-arrow.svg" alt="right arrow" class="slider-arrow-right">
           <p class="slider-label">click to enlarge</p>
           <div class="slider">
-            <a href="#img1"><img src="img/paintings/sirius-colourful.jpg" alt="placeholder" class="slider-img"></a>
-            <a href="#_"class="lightbox" id="img1"><img src="img/paintings/sirius-colourful.jpg" alt="placeholder"><p class="lightbox-label">click anywhere to return to page</p></a>
 
-            <a href="#img2"><img src="img/paintings/remus-colourful.jpg" alt="placeholder" class="slider-img"></a>
-            <a href="#_"class="lightbox" id="img2"><img src="img/paintings/remus-colourful.jpg" alt="placeholder"><p class="lightbox-label">click anywhere to return to page</p></a>
+            <a href="#img1">
+              <figure>
+                <img src="img/paintings/sirius-colourful.jpg" alt="a dark haired man lit by sunlight on a green-grey background" class="slider-img">
+                <figcaption>portrait of a young sirius black</figcaption>
+              </figure>
+            </a>
+            <a href="#_"class="lightbox" id="img1"><img src="img/paintings/sirius-colourful.jpg" alt="a dark haired man lit by sunlight on a green-grey background"><p class="lightbox-label">click anywhere to return to page</p></a>
 
-
-            <a href="#img3"><img src="img/paintings/goddard.jpg" alt="placeholder" class="slider-img"></a>
-            <a href="#_"class="lightbox" id="img3"><img src="img/paintings/goddard.jpg" alt="placeholder"><p class="lightbox-label">click anywhere to return to page</p></a>
-
-            <a href="#img4"><img src="img/paintings/sparks.jpg" alt="placeholder" class="slider-img"></a>
-            <a href="#_"class="lightbox" id="img4"><img src="img/paintings/sparks.jpg" alt="placeholder"><p class="lightbox-label">click anywhere to return to page</p></a>
-
-
-            <a href="#img5"><img src="img/paintings/ginny.jpg" alt="placeholder" class="slider-img"></a>
-            <a href="#_"class="lightbox" id="img5"><img src="img/paintings/ginny.jpg" alt="placeholder"><p class="lightbox-label">click anywhere to return to page</p></a>
-
-            <a href="#img6"><img src="img/paintings/winter-boy.gif" alt="placeholder" class="slider-img"></a>
-            <a href="#_"class="lightbox" id="img6"><img src="img/paintings/winter-boy.gif" alt="placeholder"><p class="lightbox-label">click anywhere to return to page</p></a>
-
-            <a href="#img7"><img src="img/paintings/harry.jpg" alt="placeholder" class="slider-img"></a>
-            <a href="#_"class="lightbox" id="img7"><img src="img/paintings/harry.jpg" alt="placeholder"><p class="lightbox-label">click anywhere to return to page</p></a>
-
-            <a href="#img8"><img src="img/paintings/tonks.jpg" alt="placeholder" class="slider-img"></a>
-            <a href="#_"class="lightbox" id="img8"><img src="img/paintings/tonks.jpg" alt="placeholder"><p class="lightbox-label">click anywhere to return to page</p></a>
+            <a href="#img2">
+              <figure>
+                <img src="img/paintings/remus-colourful.jpg" alt="a curly-haired scarred man on a green-grey background" class="slider-img">
+                <figcaption>portrait of a young remus lupin</figcaption>
+              </figure>
+            </a>
+            <a href="#_"class="lightbox" id="img2"><img src="img/paintings/remus-colourful.jpg" alt="a curly-haired scarred man on a green-grey background"><p class="lightbox-label">click anywhere to return to page</p></a>
 
 
-            <a href="#img9"><img src="img/paintings/remu.jpg" alt="placeholder" class="slider-img"></a>
-            <a href="#_"class="lightbox" id="img9"><img src="img/paintings/remu.jpg" alt="placeholder"><p class="lightbox-label">click anywhere to return to page</p></a>
+            <a href="#img3">
+              <figure>
+                <img src="img/paintings/goddard.jpg" alt="a moustachioed man with a conductor's baton" class="slider-img">
+                <figcaption>my high school orchestra director; retirement gift</figcaption>
+              </figure>
+            </a>
+            <a href="#_"class="lightbox" id="img3"><img src="img/paintings/goddard.jpg" alt="a moustachioed man with a conductor's baton"><p class="lightbox-label">click anywhere to return to page</p></a>
+
+            <a href="#img4">
+              <figure>
+                <img src="img/paintings/sparks.jpg" alt="a silver-haired man looking off to the right" class="slider-img">
+                <figcaption>my high school choir director; retirement gift</figcaption>
+              </figure></a>
+            <a href="#_"class="lightbox" id="img4"><img src="img/paintings/sparks.jpg" alt="a silver-haired man looking off to the right"><p class="lightbox-label">click anywhere to return to page</p></a>
 
 
-            <a href="#img10"><img src="img/paintings/sirius.jpg" alt="placeholder" class="slider-img"></a>
-            <a href="#_"class="lightbox" id="img10"><img src="img/paintings/sirius.jpg" alt="placeholder"><p class="lightbox-label">click anywhere to return to page</p></a>
+            <a href="#img5">
+              <figure>
+                <img src="img/paintings/ginny.jpg" alt="a close-up painting of a ginger woman with freckles" class="slider-img">
+                <figcaption>close-up portrait of ginny weasley</figcaption>
+              </figure>
+            </a>
+            <a href="#_"class="lightbox" id="img5"><img src="img/paintings/ginny.jpg" alt="a close-up painting of a ginger woman with freckles"><p class="lightbox-label">click anywhere to return to page</p></a>
+
+            <a href="#img6">
+              <figure>
+                <img src="img/paintings/winter-boy.gif" alt="snow falls as a young man smiles" class="slider-img">
+                <figcaption>a first attempt at an animated painting</figcaption>
+              </figure>
+            </a>
+            <a href="#_"class="lightbox" id="img6"><img src="img/paintings/winter-boy.gif" alt="snow falls as a young man smiles"><p class="lightbox-label">click anywhere to return to page</p></a>
+
+            <a href="#img7">
+              <figure>
+                <img src="img/paintings/harry.jpg" alt="a close-up high-angle of a person-of-colour harry potter" class="slider-img">
+                <figcaption>portrait of harry potter</figcaption>
+              </figure>
+            </a>
+            <a href="#_"class="lightbox" id="img7"><img src="img/paintings/harry.jpg" alt="a close-up high-angle of a person-of-colour harry potter"><p class="lightbox-label">click anywhere to return to page</p></a>
+
+            <a href="#img8">
+              <figure>
+                <img src="img/paintings/tonks.jpg" alt="a purple-haired girl with glowing skin" class="slider-img">
+                <figcaption>portrait of my friend, Jess</figcaption>
+              </figure>
+            </a>
+            <a href="#_"class="lightbox" id="img8"><img src="img/paintings/tonks.jpg" alt="a purple-haired girl with glowing skin"><p class="lightbox-label">click anywhere to return to page</p></a>
 
 
-            <a href="#img11"><img src="img/paintings/acrylic.jpg" alt="placeholder" class="slider-img"></a>
-            <a href="#_"class="lightbox" id="img11"><img src="img/paintings/acrylic.jpg" alt="placeholder"><p class="lightbox-label">click anywhere to return to page</p></a>
-
-            <a href="#img12"><img src="img/paintings/arms.jpg" alt="placeholder" class="slider-img"></a>
-            <a href="#_" class="lightbox" id="img12"><img src="img/paintings/arms.jpg" alt="placeholder"><p class="lightbox-label">click anywhere to return to page</p></a>
-
-            <a href="#img13"><img src="img/paintings/lies.jpg" alt="placeholder" class="slider-img"></a>
-            <a href="#_"class="lightbox" id="img13"><img src="img/paintings/lies.jpg" alt="placeholder"><p class="lightbox-label">click anywhere to return to page</p></a>
-
-
-            <a href="#img14"><img src="img/paintings/Rembrandt.jpg" alt="placeholder" class="slider-img"></a>
-            <a href="#_"class="lightbox" id="img14"><img src="img/paintings/Rembrandt.jpg" alt="placeholder"><p class="lightbox-label">click anywhere to return to page</p></a>
+            <a href="#img9">
+              <figure>
+                <img src="img/paintings/remu.jpg" alt="a scarred man with prominent collarbones" class="slider-img">
+                <figcaption>remus lupin, lit from above</figcaption>
+              </figure>
+            </a>
+            <a href="#_"class="lightbox" id="img9"><img src="img/paintings/remu.jpg" alt="a scarred man with prominent collarbones"><p class="lightbox-label">click anywhere to return to page</p></a>
 
 
-            <a href="#img15"><img src="img/paintings/luna.jpg" alt="placeholder" class="slider-img"></a>
-            <a href="#_"class="lightbox" id="img15"><img src="img/paintings/luna.jpg" alt="placeholder"><p class="lightbox-label">click anywhere to return to page</p></a>
+            <a href="#img10">
+              <figure>
+                <img src="img/paintings/sirius.jpg" alt="a dark-haired man with tattoos and a wand" class="slider-img">
+                <figcaption>one of my first paintings; sirius black</figcaption>
+              </figure>
+            </a>
+            <a href="#_"class="lightbox" id="img10"><img src="img/paintings/sirius.jpg" alt="dark-haired man with tattoos and a wand"><p class="lightbox-label">click anywhere to return to page</p></a>
 
 
-            <a href="#img16"><img src="img/paintings/Nova.jpg" alt="placeholder" class="slider-img"></a>
-            <a href="#_"class="lightbox" id="img16"><img src="img/paintings/Nova.jpg" alt="placeholder"><p class="lightbox-label">click anywhere to return to page</p></a>
+            <a href="#img11">
+              <figure>
+                <img src="img/paintings/acrylic.jpg" alt="a backlit portrait of a man in profile" class="slider-img">
+                <figcaption>my first traditional painting (acrylic)</figcaption>
+              </figure>
+            </a>
+            <a href="#_"class="lightbox" id="img11"><img src="img/paintings/acrylic.jpg" alt="a backlit portrait of a man in profile"><p class="lightbox-label">click anywhere to return to page</p></a>
 
-            <a href="#img17"><img src="img/paintings/charlie.jpg" alt="placeholder" class="slider-img"></a>
-            <a href="#_" class="lightbox" id="img17"><img src="img/paintings/charlie.jpg" alt="placeholder"><p class="lightbox-label">click anywhere to return to page</p></a>
+            <a href="#img12">
+              <figure>
+                <img src="img/paintings/arms.jpg" alt="a pair of pale arms, one of which has a star-wars bandaid" class="slider-img">
+                <figcaption>self-portrait</figcaption>
+              </figure>
+            </a>
+            <a href="#_" class="lightbox" id="img12"><img src="img/paintings/arms.jpg" alt="a pair of pale arms, one of which has a star-wars bandaid"><p class="lightbox-label">click anywhere to return to page</p></a>
 
-            <a href="#img18"><img src="img/paintings/tom-riddle.jpg" alt="placeholder" class="slider-img"></a>
-            <a href="#_" class="lightbox" id="img18"><img src="img/paintings/tom-riddle.jpg" alt="placeholder"><p class="lightbox-label">click anywhere to return to page</p></a>
+            <a href="#img13">
+              <figure>
+                <img src="img/paintings/lies.jpg" alt="a quill writing a cloud of ink with the words 'i must not tell lies'" class="slider-img">
+                <figcaption>i must not tell lies</figcaption>
+              </figure>
+            </a>
+            <a href="#_"class="lightbox" id="img13"><img src="img/paintings/lies.jpg" alt="a quill writing a cloud of ink with the words 'i must not tell lies'"><p class="lightbox-label">click anywhere to return to page</p></a>
 
-            <a href="#img19"><img src="img/paintings/draco.jpg" alt="placeholder" class="slider-img"></a>
-            <a href="#_" class="lightbox" id="img19"><img src="img/paintings/draco.jpg" alt="placeholder"><p class="lightbox-label">click anywhere to return to page</p></a>
+
+            <a href="#img14">
+              <figure>
+                <img src="img/paintings/Rembrandt.jpg" alt="a detailed portrait of a chubby, somber man" class="slider-img">
+                <figcaption>a study of a rembrandt painting</figcaption>
+              </figure>
+            </a>
+            <a href="#_"class="lightbox" id="img14"><img src="img/paintings/Rembrandt.jpg" alt="a detailed portrait of a chubby, somber man"><p class="lightbox-label">click anywhere to return to page</p></a>
+
+
+            <a href="#img15">
+              <figure>
+                <img src="img/paintings/luna.jpg" alt="a blonde girl with a wand stuck in her curly hair" class="slider-img">
+                <figcaption>luna lovegood</figcaption>
+              </figure>
+            </a>
+            <a href="#_"class="lightbox" id="img15"><img src="img/paintings/luna.jpg" alt="a blonde girl with a wand stuck in her curly hair"><p class="lightbox-label">click anywhere to return to page</p></a>
+
+
+            <a href="#img16">
+              <figure>
+                <img src="img/paintings/Nova.jpg" alt="a blond, angsty non-binary person with a scar on their neck" class="slider-img">
+                <figcaption>an original character of mine-- nova</figcaption>
+              </figure>
+            </a>
+            <a href="#_"class="lightbox" id="img16"><img src="img/paintings/Nova.jpg" alt="a blond, angsty non-binary person with a scar on their neck"><p class="lightbox-label">click anywhere to return to page</p></a>
+
+            <a href="#img17">
+              <figure>
+                <img src="img/paintings/charlie.jpg" alt="a thoroughly scarred smiling red-haired man" class="slider-img">
+                <figcaption>a portrait of charlie weasley</figcaption>
+              </figure>
+            </a>
+            <a href="#_" class="lightbox" id="img17"><img src="img/paintings/charlie.jpg" alt="a thoroughly scarred smiling red-haired man"><p class="lightbox-label">click anywhere to return to page</p></a>
+
+            <a href="#img18">
+              <figure>
+                <img src="img/paintings/tom-riddle.jpg" alt="high angle of a dark-haired, pale-skinned man" class="slider-img">
+                <figcaption>tom riddle, based on cillian murphy</figcaption>
+              </figure>
+            </a>
+            <a href="#_" class="lightbox" id="img18"><img src="img/paintings/tom-riddle.jpg" alt="high angle of a dark-haired, pale-skinned man"><p class="lightbox-label">click anywhere to return to page</p></a>
+
+            <a href="#img19">
+              <figure>
+                <img src="img/paintings/draco.jpg" alt="a blond, smug man staring into the distance" class="slider-img">
+                <figcaption>a portrait of draco malfoy</figcaption>
+              </figure>
+            </a>
+            <a href="#_" class="lightbox" id="img19"><img src="img/paintings/draco.jpg" alt="a blond, smug man staring into the distance"><p class="lightbox-label">click anywhere to return to page</p></a>
           </div>
         </div>
       </section>
@@ -158,26 +241,19 @@
       <div class="vertical-space-10"></div>
 
       <section id="about">
-        <div class="text-centered">
-          <h2>about me</h2>
-        </div>
+        <h2 class="text-centered">about me</h2>
         <div class="content-module">
-            <!-- <div class="self-portrait-full">
-              <img src="img/self.jpg" alt="a painting of myself shoulders-up from behind">
-            </div> -->
             <div class="self-portrait-half">
-              <img src="img/self-half.jpg" alt="a painting of myself shoulders-up from behind">
+              <img src="img/self-half.jpg" alt="a painting of myself with long blonde hair, shoulders-up from behind">
             </div>
-              <p class="regular-text">Hi, I'm Jules, a student of Interactive Arts and Technology at Simon Fraser University. I love to design stories into everything I create, from point-and-click narratives and VR games to installation art. This probably comes from my passion for excellent fiction, and my upbringing in a house full of geeks. Seriously, don't get me started on Harry Potter or The Lord of the Rings.</p>
+              <p class="regular-text">Hi, I'm Jules, a student of Interactive Arts and Technology at Simon Fraser University. I love to design stories into everything I create, from point-and-click narratives and VR games to animated short films. This probably comes from my passion for excellent fiction, and my upbringing in a house full of geeks. Seriously, don't get me started on Harry Potter or The Lord of the Rings.</p>
         </div>
       </section>
 
       <div class="vertical-space-10"></div>
 
       <section id="contact">
-        <div class="text-centered">
-          <h2>contact me!</h2>
-        </div>
+        <h2 class="text-centered">contact me!</h2>
         <div class="box-contact content-module text-centered">
           <div>
             <h3>email:</h3>
@@ -194,13 +270,16 @@
         </div>
       </section>
 
-      www.linkedin.com/in/juliana-loughin-7290a1129
-
       <div class="vertical-space-5"></div>
 
+      <!-- these can load last -->
+
+      <img class= "front-trees-left" src="img/front-trees-left.png" alt="trees on left side of the content">
+      <img class= "front-trees-right" src="img/front-trees-right.png" alt="trees on right side of the content">
 
       <footer>
-        <p class="footer-text">visit my style guide <a href="Styleguide.html" class="in-text-link">here</a></p>
+        <p class="footer-text">Visit my style guide <a href="Styleguide.html" class="in-text-link">here</a>.</p>
+        <p class="footer-text"> Copyright &copy;2018 Juliana Loughin</p>
       </footer>
 
     </div>

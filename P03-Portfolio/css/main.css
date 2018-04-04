@@ -101,9 +101,9 @@
   }
 }
 
-.paper-background {
+.background-paper {
   background-image:
-  url("../img/paper-background.jpg");
+  url("../img/background-paper.jpg");
   background-size: 100%;
   background-position: 0 0;
   background-color: #E6E5DD;
@@ -180,7 +180,7 @@ h1 {
   display: block;
 }
 
-project-h1 {
+.project-h1 {
   font-family: 'Leafy', serif;
   color: white;
   text-shadow: -2px 4px 10px rgba(11, 21, 22, 0.25);
@@ -190,13 +190,6 @@ project-h1 {
   letter-spacing: 0.35rem;
   margin: 2rem 0 2rem 0;
   display: block;
-}
-
-@media (min-width: 30.06rem) {
-  project-h1 {
-    font-size: 5rem;
-      margin: 0;
-  }
 }
 
 .centered {
@@ -213,11 +206,11 @@ h2 {
   font-family: 'Hello Stockholm', sans-serif;
   font-weight: normal;
   font-style: normal;
-  font-size: 5rem;
+  font-size: 4rem;
   letter-spacing: 0.35rem;
   color: white;
   text-shadow: -2px 4px 10px rgba(11, 21, 22, 0.25);
-  margin-bottom: -6rem;
+  margin-bottom: -4rem;
   margin-top: 0;
 }
 
@@ -266,6 +259,13 @@ section code {
   display: block;
 }
 
+@media (min-width: 30rem) {
+  .project-h1 {
+    font-size: 6rem;
+    margin: 0;
+  }
+}
+
 .blurb-box {
   /* width: 100%; */
   padding: 2rem 4rem 2rem 4rem;
@@ -295,6 +295,7 @@ section code {
   height: 150px;
   width: auto;
   margin-right: 1rem;
+  display: inline-block;
 }
 
 .slider-arrow-left {
@@ -304,7 +305,7 @@ section code {
   top: 85px;
   transform: translate(0, -50%);
   width: 7%;
-  height:auto;
+  height: auto;
 }
 
 .slider-arrow-right {
@@ -314,7 +315,7 @@ section code {
   top: 85px;
   transform: translate(0, -50%);
   width: 7%;
-  height:auto;
+  height: auto;
 }
 
 .slider-arrow-left-second {
@@ -331,7 +332,7 @@ section code {
   position: absolute;
   z-index: 14;
   right: -1.5rem;
-  top: 255px;
+  top: 275px;
   transform: translate(0, -50%);
   width: 7%;
   height:auto;
@@ -363,7 +364,7 @@ section code {
   color: #0B1517;
   position: absolute;
   text-align: center;
-  top: 305px;
+  top: 352px;
   left: 50%;
   transform: translate(-50%, 0);
   margin: 0;
@@ -371,6 +372,23 @@ section code {
   width: 100%;
   background-color: rgba(255, 255, 255, 0.8);
   text-shadow: -2px 4px 10px rgba(11, 21, 22, 0.25);
+}
+
+figure {
+  margin: 0 0 1.5rem 0;
+}
+
+figcaption {
+  font-family: 'Roboto';
+  font-weight: 300;
+  font-size: 0.6rem;
+  letter-spacing: 0.1rem;
+  color: #0B1517;
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
 }
 
 /* need to declare this in order for absolute position for contained elements to work: */
@@ -386,7 +404,7 @@ div {
   letter-spacing: 0.1rem;
   color: #0B1517;
   position: absolute;
-  bottom: 0;
+  bottom: 11px;
   left: 50%;
   text-align: center;
   transform: translate(-50%, 0);
@@ -404,13 +422,10 @@ div {
   letter-spacing: 0.1rem;
   color: white;
   position: absolute;
-  bottom: 0.5rem;
-  left: 50%;
-  text-align: center;
-  transform: translate(-50%, 0);
+  top: 1rem;
+  left: 1rem;
   margin: 0;
   padding: 0.5rem 0 0.5rem 0;
-  width: 100%;
 }
 
 @media (min-width: 25.69rem) {
@@ -424,16 +439,16 @@ div {
     top: 110px;
   }
   .slider-arrow-left-second {
-    top: 330px;
+    top: 350px;
   }
   .slider-arrow-right-second {
-    top: 330px;
+    top: 350px;
   }
   .slider-label {
     top: 200px;
   }
   .slider-label-second {
-    top: 405px;
+    top: 452px;
   }
 }
 
@@ -448,16 +463,16 @@ div {
     top: 160px;
   }
   .slider-arrow-left-second {
-    top: 480px;
+    top: 500px;
   }
   .slider-arrow-right-second {
-    top: 480px;
+    top: 500px;
   }
   .slider-label {
     top: 300px;
   }
   .slider-label-second {
-    top: 605px;
+    top: 652px;
   }
 }
 
@@ -472,16 +487,16 @@ div {
     top: 260px;
   }
   .slider-arrow-left-second {
-    top: 780px;
+    top: 800px;
   }
   .slider-arrow-right-second {
-    top: 780px;
+    top: 800px;
   }
   .slider-label {
     top: 500px;
   }
   .slider-label-second {
-    top: 1005px;
+    top: 1052px;
   }
 }
 
@@ -617,6 +632,10 @@ div {
 
 .in-text-link:hover, .in-text-link:focus, .in-text-link:active {
   color: #87231A;
+}
+
+.footer-text > .in-text-link {
+  color: #B1B8A8;
 }
 
 .button-read-more {
@@ -856,7 +875,10 @@ footer {
 
 .footer-text {
   font-family: 'Roboto', sans-serif;
-  color: white;
+  color: #416463;
+  font-size: 0.7rem;
+  font-weight: 300;
+  line-height: 0.5rem;
 }
 
 /* paintings page styling */
@@ -884,13 +906,13 @@ footer {
   display: inline-block;
 }
 
-
 @media (min-width: 40.19rem){
   .half-column{
     width: 70%;
   }
   h2 {
-    font-size: 10rem;
+    font-size: 8rem;
+    margin-bottom: -6rem;
   }
   h1 {
     font-size: 7rem;
@@ -902,12 +924,6 @@ footer {
     width: 50%;
   }
 }
-
-/* .self-portrait-full {
-  width: 100%;
-  margin-bottom: 1rem;
-  display: none;
-} */
 
 .self-portrait-half {
   width: 100%;
