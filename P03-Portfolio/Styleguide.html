@@ -7,16 +7,12 @@
     <title>Style Guide</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link href="css/normalize.css" rel="stylesheet">
-    <link href="css/main.css" rel="stylesheet">
-    <link href="css/fonts.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400" rel="stylesheet">
+    <link href="css/main-dist.css" rel="stylesheet">
 
   </head>
 
   <body>
-    <div class="paper-background">
+    <div class="background-paper">
 
       <img class= "perma-trees-left" src="img/front-trees-left.png" alt="trees on left side of the content">
       <img class= "perma-trees-right" src="img/front-trees-right.png" alt="trees on right side of the content">
@@ -24,26 +20,21 @@
       <header class="box-item-nav">
         <nav class="nav-box">
           <a class="header-button-nav" href="Index.html">home</a>
-          <a href="Index.html"><img src="img/home.svg" class="nav-icon" alt="placeholder"></a>
+          <a href="Index.html"><img src="img/home.png" class="nav-icon" alt="placeholder"></a>
 
           <a class="header-button-nav" href="Index.html#projects">projects</a>
-          <a href="Index.html#projects"><img src="img/projects.svg" class="nav-icon" alt="placeholder"></a>
+          <a href="Index.html#projects"><img src="img/projects.png" class="nav-icon" alt="placeholder"></a>
 
           <a class="header-button-nav active" href="Index.html#art">art</a>
-          <a href="Index.html#art"><img src="img/art.svg" class="nav-icon" alt="placeholder"></a>
+          <a href="Index.html#art"><img src="img/art.png" class="nav-icon" alt="placeholder"></a>
 
           <a class="header-button-nav" href="Index.html#about">about</a>
-          <a href="Index.html#about"><img src="img/about.svg" class="nav-icon" alt="placeholder"></a>
+          <a href="Index.html#about"><img src="img/about.png" class="nav-icon" alt="placeholder"></a>
 
           <a class="header-button-nav" href="Index.html#contact">contact</a>
-          <a href="Index.html#contact"><img src="img/contact.svg" class="nav-icon" alt="placeholder"></a>
+          <a href="Index.html#contact"><img src="img/contact.png" class="nav-icon" alt="placeholder"></a>
 
           <a href="Index.html" class="logo">jl</a>
-          <!-- <div class="hamburger-container" onclick="myFunction(this)">
-            <div class="bar1"></div>
-            <div class="bar2"></div>
-            <div class="bar3"></div>
-          </div> -->
         </nav>
       </header>
 
@@ -96,23 +87,6 @@
         </div>
 
 
-        <div class="text-centered">
-          <h2>Read More Button</h2>
-        </div>
-        <div class="content-module">
-          <h3>CSS selector:</h3>
-          <ul>
-            <li class="regular-text">.button-read-more</li>
-          </ul>
-
-          <h3>Sample code:</h3>
-          <code>&lt;a class=&quot;in-text-link&quot; href=&quot;#&quot;&gt;here's the link&lt;/a&gt;</code>
-
-          <h3>Rendered element:</h3>
-           <a class="button-read-more" href="#">tell me more!</a>
-        </div>
-
-      </section>
       <!-- // INTERACTIVE ELEMENTS SECTION -->
 
 
@@ -218,20 +192,10 @@
           </ul>
 
           <h3>Sample code:</h3>
-          <code>&lt;div class=&quot;nav-box&quot;&gt;<br> &lt;a class=&quot;header-button-nav&quot; href=&quot;#&quot;&gt;about&lt;/a&gt;<br> &lt;a class=&quot;header-button-nav&quot; href=&quot;#&quot;&gt;projects&lt;/a&gt; <br> &lt;a class=&quot;header-button-nav&quot; href=&quot;#&quot;&gt;art&lt;/a&gt; <br> &lt;a class=&quot;header-button-nav&quot; href=&quot;#&quot;&gt;contact&lt;/a&gt;<br> &lt;/div&gt;</code>
+          <code>&lt;header&gt; <br>&lt;nav class=&quot;nav-box&quot;&gt;<br> &lt;a class=&quot;header-button-nav&quot; href=&quot;Index.html&quot;&gt;home&lt;/a&gt; <br>&lt;a href=&quot;Index.html&quot;&gt;&lt;img src=&quot;img/home.png&quot; class=&quot;nav-icon&quot; alt=&quot;icon of a house&quot; aria-hidden=&quot;true&quot;&gt;&lt;/a&gt; <br> &lt;a class=&quot;header-button-nav&quot; href=&quot;Index.html#projects&quot;&gt;work&lt;/a&gt;<br> &lt;a href=&quot;Index.html#projects&quot;&gt;&lt;img src=&quot;img/projects.png&quot; class=&quot;nav-icon&quot; alt=&quot;icon of a briefcase&quot; aria-hidden=&quot;true&quot;&gt;&lt;/a&gt;<br> &lt;a class=&quot;header-button-nav active&quot; href=&quot;Index.html#art&quot;&gt;art&lt;/a&gt; <br>&lt;a href=&quot;Index.html#art&quot;&gt;&lt;img src=&quot;img/art.png&quot; class=&quot;nav-icon&quot; alt=&quot;icon of art supplies&quot; aria-hidden=&quot;true&quot;&gt;&lt;/a&gt;<br> &lt;a class=&quot;header-button-nav&quot; href=&quot;Index.html#about&quot;&gt;about&lt;/a&gt; <br> &lt;a href=&quot;Index.html#about&quot;&gt;&lt;img src=&quot;img/about.png&quot; class=&quot;nav-icon&quot; alt=&quot;icon of a person with long hair&quot; aria-hidden=&quot;true&quot;&gt;&lt;/a&gt;<br> &lt;a class=&quot;header-button-nav&quot; href=&quot;Index.html#contact&quot;&gt;contact&lt;/a&gt; <br> &lt;a href=&quot;Index.html#contact&quot;&gt;&lt;img src=&quot;img/contact.png&quot; class=&quot;nav-icon&quot; alt=&quot;icon of a sealed envelope&quot; aria-hidden=&quot;true&quot;&gt;&lt;/a&gt; <br> &lt;a href=&quot;Index.html&quot; class=&quot;logo&quot;&gt;jl&lt;/a&gt; <br> &lt;/nav&gt; <br>&lt;/header&gt;</code>
 
           <h3>Rendered element:</h3>
-          <nav class="nav-box-styleguide">
-            <a class="header-button-nav" href="#">about</a>
-            <a class="header-button-nav" href="#">projects</a>
-            <a class="header-button-nav" href="#">art</a>
-            <a class="header-button-nav" href="#">contact</a>
-            <div class="hamburger-container" onclick="myFunction(this)">
-              <div class="bar1"></div>
-              <div class="bar2"></div>
-              <div class="bar3"></div>
-            </div>
-          </nav>
+          <p class="regular-text">[see top of page] </p>
         </div>
 
         <div class="text-centered">
@@ -254,10 +218,6 @@
             <a href="#" class="project-listing box-item-image">
               <img src="img/ribbonbound.gif" alt="a ribbon-wrapped wizard">
               <h3 class="project-listing-title">ribbonbound</h3>
-            </a>
-            <a href="#" class="project-listing box-item-image">
-              <img src="img/crushed.gif" alt="two robots">
-              <h3 class="project-listing-title">crushed</h3>
             </a>
         </div>
 

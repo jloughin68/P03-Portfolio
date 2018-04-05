@@ -1,0 +1,1061 @@
+
+@import 'normalize';
+@import 'fonts';
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700');
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400');
+
+.background {
+  background-image:
+  url("../img/background-mountain.jpg");
+  background-size: 120%;
+  background-repeat: no-repeat;
+  background-position: 0rem 0rem;
+  background-color: #0b0d0e;
+  background-attachment: scroll;
+  overflow: hidden;
+}
+
+@media (min-width:  10rem) {
+  .background {
+    background-position: 0rem -3rem;
+  }
+}
+
+@media (min-width:  15rem) {
+  .background {
+    background-position: 0rem -8rem;
+  }
+}
+
+@media (min-width:  20rem) {
+  .background {
+    background-position: 0rem -13rem;
+  }
+}
+
+@media (min-width:  25rem) {
+  .background {
+    background-position: 0rem -18rem;
+  }
+}
+
+@media (min-width:  30rem) {
+  .background {
+    background-position: 0rem -23rem;
+  }
+}
+
+@media (min-width:  35rem) {
+  .background {
+    background-position: 0rem -28rem;
+  }
+}
+
+ @media (min-width:  40rem) {
+   .background {
+     background-position: 0rem -33rem;
+   }
+ }
+
+@media (min-width: 45rem) {
+  .background {
+    background-image: url("../img/background-full.jpg");
+    background-position: -5rem -35rem;
+  }
+}
+
+@media (min-width: 50rem) {
+  .background {
+    background-position: -5rem -40rem;
+  }
+}
+
+@media (min-width: 56.94rem) {
+  .background {
+    background-position: 0 -35rem;
+    background-size: 100%;
+  }
+}
+
+@media (min-width: 65rem) {
+  .background {
+    background-position: 0 -40rem;
+  }
+}
+
+@media (min-width: 70rem) {
+  .background {
+    background-position: 0 -45rem;
+  }
+}
+
+@media (min-width: 75rem) {
+  .background {
+    background-position: 0 -51rem;
+  }
+}
+
+@media (min-width: 90rem) {
+  .background {
+    background-position: 0 -57rem;
+  }
+}
+
+@media (min-width: 100rem) {
+  .background {
+    background-position: 0 -68rem;
+  }
+}
+
+.background-paper {
+  background-image:
+  url("../img/background-paper.jpg");
+  background-size: 100%;
+  background-position: 0 0;
+  background-color: #E6E5DD;
+  background-attachment: fixed;
+  overflow: hidden;
+}
+
+.front-trees-left {
+  position: fixed;
+  height: auto;
+  width: 5rem;
+  left: 0;
+  top: -10rem;
+  z-index: 9;
+  display: inline-block;
+  overflow: hidden;
+}
+
+.front-trees-right {
+  position: fixed;
+  height: auto;
+  width: 5rem;
+  right: 0;
+  top: -8rem;
+  z-index: 9;
+  display: inline-block;
+  overflow: hidden;
+}
+
+.perma-trees-left {
+  position: fixed;
+  height: auto;
+  width: 5rem;
+  left: 0;
+  top: -10rem;
+  z-index: 9;
+  display: inline-block;
+  overflow: hidden;
+}
+
+.perma-trees-right {
+  position: fixed;
+  height: auto;
+  width: 5rem;
+  right: 0;
+  top: -8rem;
+  z-index: 9;
+  display: inline-block;
+  overflow: hidden;
+}
+
+@media (min-width: 45rem) {
+  .front-trees-left {
+    display: none;
+  }
+  .front-trees-right {
+    display: none;
+  }
+}
+
+/*
+  TEXT ELEMENTS -------------------
+*/
+
+h1 {
+  font-family: 'Leafy', serif;
+  color: white;
+  text-shadow: -2px 4px 10px rgba(11, 21, 22, 0.25);
+  font-weight: normal;
+  font-style: normal;
+  font-size: 5rem;
+  letter-spacing: 0.35rem;
+  margin: 0;
+  display: block;
+}
+
+.project-h1 {
+  font-family: 'Leafy', serif;
+  color: white;
+  text-shadow: -2px 4px 10px rgba(11, 21, 22, 0.25);
+  font-weight: normal;
+  font-style: normal;
+  font-size: 3rem;
+  letter-spacing: 0.35rem;
+  margin: 2rem 0 2rem 0;
+  display: block;
+}
+
+.centered {
+  vertical-align: CENTER;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.text-centered {
+  text-align: center;
+}
+
+h2 {
+  font-family: 'Hello Stockholm', sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 4rem;
+  letter-spacing: 0.35rem;
+  color: white;
+  text-shadow: -2px 4px 10px rgba(11, 21, 22, 0.25);
+  margin-bottom: -4rem;
+  margin-top: 0;
+}
+
+h3 {
+  font-family: 'Roboto Condensed';
+  font-weight: 400;
+  letter-spacing: 0.2rem;
+  color: #0B1517;
+  text-transform: uppercase;
+}
+
+.home-h3 {
+  text-shadow: -2px 4px 10px rgba(11, 21, 22, 0.25);
+  color: white;
+  margin: 0;
+  font-size: 0.6rem;
+}
+
+.project-h3 {
+  text-align: center;
+  margin-top: 1.5rem;
+}
+
+.regular-text {
+  font-family: 'Roboto';
+  font-weight: 300;
+  font-size: 0.7rem;
+  letter-spacing: 0.1rem;
+  line-height: 1.7;
+  color: #0B1517;
+}
+
+@media (min-width: 25.88rem) {
+  .regular-text {
+    font-size: 0.85rem;
+  }
+}
+
+.social {
+  height: 1.5rem;
+}
+
+section code {
+  background-color: #EEE;
+  padding: 0.5em 0.75em;
+  display: block;
+}
+
+@media (min-width: 30rem) {
+  .project-h1 {
+    font-size: 6rem;
+    margin: 0;
+  }
+}
+
+.blurb-box {
+  /* width: 100%; */
+  padding: 2rem 4rem 2rem 4rem;
+  margin-top: 6rem;
+  margin-bottom: 6rem;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: rgba(255, 255, 255, 0.7);
+}
+
+/* styling for carousel: http://mediatemple.net/blog/tips/carousels-dont-have-to-be-complicated/ */
+
+.slider {
+  position: static;
+  margin: 0;
+  /* line them up horizontally */
+  display: flex;
+  /* allow for scrolling */
+  overflow-x: auto;
+  /* make it smooth on iOS */
+  -webkit-overflow-scrolling: touch;
+}
+
+.slider-img {
+  /* make sure the width is honored */
+  flex-shrink: 0;
+  height: 150px;
+  width: auto;
+  margin-right: 1rem;
+  display: inline-block;
+}
+
+.slider-arrow-left {
+  position: absolute;
+  z-index: 14;
+  left: -1.5rem;
+  top: 85px;
+  transform: translate(0, -50%);
+  width: 7%;
+  height: auto;
+}
+
+.slider-arrow-right {
+  position: absolute;
+  z-index: 14;
+  right: -1.5rem;
+  top: 85px;
+  transform: translate(0, -50%);
+  width: 7%;
+  height: auto;
+}
+
+.slider-arrow-left-second {
+  position: absolute;
+  z-index: 14;
+  left: -1.5rem;
+  top: 255px;
+  transform: translate(0, -50%);
+  width: 7%;
+  height:auto;
+}
+
+.slider-arrow-right-second {
+  position: absolute;
+  z-index: 14;
+  right: -1.5rem;
+  top: 275px;
+  transform: translate(0, -50%);
+  width: 7%;
+  height:auto;
+}
+
+.slider-label {
+  font-family: 'Roboto';
+  font-weight: 400;
+  font-size: 0.8rem;
+  letter-spacing: 0.1rem;
+  color: #0B1517;
+  position: absolute;
+  text-align: center;
+  top: 150px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  margin: 0;
+  padding: 0.6rem 0 0.6rem 0;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.8);
+  text-shadow: -2px 4px 10px rgba(11, 21, 22, 0.25);
+}
+
+.slider-label-second {
+  font-family: 'Roboto';
+  font-weight: 400;
+  font-size: 0.8rem;
+  letter-spacing: 0.1rem;
+  color: #0B1517;
+  position: absolute;
+  text-align: center;
+  top: 352px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  margin: 0;
+  padding: 0.6rem 0 0.6rem 0;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.8);
+  text-shadow: -2px 4px 10px rgba(11, 21, 22, 0.25);
+}
+
+figure {
+  margin: 0 0 1.5rem 0;
+}
+
+figcaption {
+  font-family: 'Roboto';
+  font-weight: 300;
+  font-size: 0.6rem;
+  letter-spacing: 0.1rem;
+  color: #0B1517;
+  text-align: center;
+}
+
+figure > figcaption {
+  margin-top: 0.2rem;
+  color: white;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* need to declare this in order for absolute position for contained elements to work: */
+
+div {
+  position: relative;
+}
+
+.regular-label {
+  font-family: 'Roboto';
+  font-weight: 400;
+  font-size: 0.8rem;
+  letter-spacing: 0.1rem;
+  color: #0B1517;
+  position: absolute;
+  bottom: 11px;
+  left: 50%;
+  text-align: center;
+  transform: translate(-50%, 0);
+  margin: 0;
+  padding: 0.5rem 0 0.5rem 0;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.8);
+  text-shadow: -2px 4px 10px rgba(11, 21, 22, 0.25);
+}
+
+.lightbox-label {
+  font-family: 'Roboto';
+  text-shadow: -2px 4px 10px rgba(11, 21, 22, 0.9);
+  font-weight: 400;
+  font-size: 0.8rem;
+  letter-spacing: 0.1rem;
+  color: white;
+  position: absolute;
+  top: 1.5rem;
+  right: 1.5rem;
+  margin: 0;
+  padding: 0.5rem 0 0.5rem 0;
+}
+
+@media (min-width: 25.69rem) {
+  .slider-img {
+    height: 200px;
+  }
+  .slider-arrow-left {
+    top: 110px;
+  }
+  .slider-arrow-right {
+    top: 110px;
+  }
+  .slider-arrow-left-second {
+    top: 350px;
+  }
+  .slider-arrow-right-second {
+    top: 350px;
+  }
+  .slider-label {
+    top: 200px;
+  }
+  .slider-label-second {
+    top: 452px;
+  }
+}
+
+@media (min-width: 34.88rem) {
+  .slider-img {
+    height: 300px;
+  }
+  .slider-arrow-left {
+    top: 160px;
+  }
+  .slider-arrow-right {
+    top: 160px;
+  }
+  .slider-arrow-left-second {
+    top: 500px;
+  }
+  .slider-arrow-right-second {
+    top: 500px;
+  }
+  .slider-label {
+    top: 300px;
+  }
+  .slider-label-second {
+    top: 652px;
+  }
+}
+
+@media (min-width: 53.25rem) {
+  .slider-img {
+    height: 500px;
+  }
+  .slider-arrow-left {
+    top: 260px;
+  }
+  .slider-arrow-right {
+    top: 260px;
+  }
+  .slider-arrow-left-second {
+    top: 800px;
+  }
+  .slider-arrow-right-second {
+    top: 800px;
+  }
+  .slider-label {
+    top: 500px;
+  }
+  .slider-label-second {
+    top: 1052px;
+  }
+}
+
+/* makes sure the arrows don't overlap with the box */
+@media (min-width: 25.6875rem) {
+  .slider-arrow-left {
+    left: -2rem;
+  }
+  .slider-arrow-right {
+    right: -2rem;
+  }
+  .slider-arrow-left-second {
+    left: -2rem;
+  }
+  .slider-arrow-right-second {
+    right: -2rem;
+  }
+}
+
+@media (min-width: 34.875rem) {
+  .slider-arrow-left {
+    left: -3rem;
+  }
+  .slider-arrow-right {
+    right: -3rem;
+  }
+  .slider-arrow-left-second {
+    left: -3rem;
+  }
+  .slider-arrow-right-second {
+    right: -3rem;
+  }
+}
+
+/* css lightbox: https://codepen.io/gschier/pen/HCoqh */
+
+
+.lightbox {
+	/** Default lightbox to hidden */
+	display: none;
+
+	/** Position and style */
+	position: fixed;
+	z-index: 25;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	top: 0;
+	left: 0;
+	background: rgba(0, 0, 0, 0.8);
+}
+
+.lightbox img {
+  display: block;
+  height: auto;
+  width: auto;
+  max-height: 100%;
+  max-width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 2rem;
+}
+
+.lightbox:target {
+	/** Remove default browser outline */
+	outline: none;
+
+	/** Unhide lightbox **/
+	display: inline-block;
+}
+
+/*
+  INTERACTIVE ELEMENTS -------------------
+*/
+
+/* Styling for the navigation button */
+.button-nav {
+  font-family: "Roboto Condensed", sans-serif;
+  font-weight: 400;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  display: inline-block;
+  letter-spacing: 0.1rem;
+  padding: 0.5em 0.75em;
+  margin: 1rem;
+  color: #0B1517;
+  text-shadow: -2px 4px 10px rgba(11, 21, 22, 0.25);
+  border-radius: 0.25em;
+  text-decoration: none;
+  -webkit-transition: background-color 0.3s ease-out;
+  transition: background-color 0.3s ease-out;
+  -webkit-transition: color 0.3s ease-out;
+  transition: color 0.3s ease-out;
+}
+
+.button-nav:hover, .button-nav:focus, .button-nav:active {
+  background-color: #B1B8A8;
+  color: #E6E5DD;
+}
+
+.header-button-nav {
+  font-family: "Roboto Condensed", sans-serif;
+  font-weight: 400;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  display: none;
+  letter-spacing: 0.1rem;
+  padding: 0.5em 0.75em;
+  margin: 1rem;
+  color: white;
+  border-radius: 0.25em;
+  text-decoration: none;
+  -webkit-transition: background-color 0.3s ease-out;
+  transition: background-color 0.3s ease-out;
+  -webkit-transition: color 0.3s ease-out;
+  transition: color 0.3s ease-out;
+}
+
+.header-button-nav:hover, .header-button-nav:focus, .header-button-nav:active {
+  background-color: white;
+  color: rgb(177, 183, 168);
+}
+
+.in-text-link {
+  text-decoration: none;
+  color: #B46955;
+  font-weight: 400;
+  -webkit-transition: color 0.3s ease-out;
+  transition: color 0.3s ease-out;
+}
+
+.in-text-link:hover, .in-text-link:focus, .in-text-link:active {
+  color: #87231A;
+}
+
+.footer-text > .in-text-link {
+  color: #B1B8A8;
+}
+
+.button-read-more {
+  font-family: "Roboto Condensed", sans-serif;
+  font-weight: 400;
+  letter-spacing: 0.05rem;
+  font-size: 0.8rem;
+  color: white;
+  text-decoration: none;
+  text-transform: lowercase;
+  display: inline-block;
+
+  padding: 0.2rem 1.5rem 0.2em 1.5rem;
+  margin-top: 1rem;
+  background-color: #B46955;
+
+  border-radius: 0.25em;
+  -webkit-transition: background-color 0.3s ease-out;
+  transition: background-color 0.3s ease-out;
+}
+
+.button-read-more:hover, .button-read-more:focus, .button-read-more:active {
+  background-color: #87231A;
+}
+
+/*
+  COMBINED ELEMENTS -------------------
+*/
+
+.project-listing {
+  display: block;
+  position: relative;
+  opacity: 1;
+  text-decoration: none;
+  -webkit-transition: opacity 0.3s ease-out;
+  transition: opacity 0.3s ease-out;
+}
+
+.project-listing:hover, .project-listing:focus, .project-listing:active {
+  opacity: 0.5;
+}
+
+.project-listing-title {
+  font-family: "Roboto Condensed", sans-serif;
+  color: white;
+  /* text-align: center; */
+  font-weight: 400;
+  font-size: 1rem;
+  position: absolute;
+  bottom: 5%;
+  left: 10%;
+  /* transform: translate(-50%, -50%); */
+}
+
+.p1-margin{
+  margin-bottom: 1rem;
+}
+
+@media (min-width: 54.13rem) {
+  .project-listing-title {
+    font-size: 1.5rem;
+  }
+}
+
+@media (min-width: 42.35rem) {
+  .project-listing {
+
+  }
+}
+
+@media (min-width: 55.81rem) {
+  .project-listing {
+
+  }
+}
+
+.nav-box-styleguide {
+  background-color: rgb(177, 183, 168);
+  padding: 0 4rem;
+  margin-bottom: 1rem;
+  display: inline-block;
+}
+
+.nav-box {
+  z-index: 15;
+  background-color: rgb(177, 183, 168);
+  padding: 0rem 0.5rem;
+  margin: 0;
+  display: inline-block;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  box-shadow: -2px 4px 5px rgba(11, 21, 22, 0.25);
+}
+
+.logo {
+  font-family: 'Leafy', serif;
+  color: white;
+  font-size: 1.75rem;
+  border-color: white;
+  position: fixed;
+  display: inline-block;
+  right: 1rem;
+  top: 0.5rem;
+  margin: auto 0 auto 0;
+  text-decoration: none;
+}
+
+/* spacers named for the size they are above a tablet size-- they shrink at a smaller size to avoid giant gaps */
+
+
+.vertical-space-2 {
+  padding: 2%;
+}
+.vertical-space-5 {
+  padding: 5%;
+}
+
+.vertical-space-7 {
+  padding: 10%;
+}
+
+@media (min-width: 40.19rem) {
+  .vertical-space-7 {
+    padding: 7%;
+  }
+  .home-h3 {
+    font-size: 1rem;
+  }
+}
+
+
+
+.vertical-space-10 {
+  padding: 10%;
+}
+
+.vertical-space-12 {
+  padding: 12%;
+}
+
+.nav-icon {
+  vertical-align: CENTER;
+  display: inline-block;
+  width: 1.25rem;
+  margin: 0.75rem;
+  -webkit-transition: opacity 0.3s ease-out;
+  transition: opacity 0.3s ease-out;
+}
+
+.nav-icon:hover, .nav-icon:focus, .nav-icon:active {
+  opacity: 0.5;
+}
+
+@media (min-width: 23.56rem) {
+  .nav-icon {
+    width: 1.75rem;
+  }
+  .logo {
+    font-size: 2.25rem;
+  }
+}
+
+@media (min-width: 36rem) {
+  /* .hamburger-container {
+    display: none;
+  } */
+  .header-button-nav {
+    display: inline-block;
+  }
+  .nav-icon {
+    display: none;
+  }
+}
+
+
+/*based off of tutorial on https://www.w3schools.com/howto/howto_css_image_text.asp*/
+
+img {
+  width: 100%;
+}
+
+.palette {
+  background-color: white;
+}
+
+.swatch {
+  font-family: 'Merriweather', serif;
+  color: white;
+  margin: 1em;
+  padding: 2em 1.65em;
+  margin-left:1em;
+  margin-right: 0;
+  display: inline-block;
+}
+
+
+.cream {
+  background-color: #E6E5DD;
+}
+
+.beige {
+  background-color: #B99785;
+}
+
+.pink {
+  background-color: #B46955;
+}
+
+.red {
+  background-color: #87231A;
+}
+
+.grey-green {
+  background-color: #B1B8A8;
+}
+
+.teal {
+  background-color: #416463;
+}
+
+.navy-grey {
+  background-color: #0B1517;
+}
+
+footer {
+  background-color: #0B1517;
+  padding: 1rem 2rem;
+  text-align: center;
+  height: 6rem;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  z-index: 20;
+}
+
+.footer-text {
+  font-family: 'Roboto', sans-serif;
+  color: #416463;
+  font-size: 0.7rem;
+  font-weight: 300;
+  line-height: 0.7rem;
+}
+
+/* paintings page styling */
+
+.painting-box {
+  background-color: rgba(255, 255, 255, 0.9);
+  margin: 2rem 15% 2rem 15%;
+  padding: 1.8%;
+  text-align: center;
+}
+
+.third-column{
+  width: 29%;
+  margin-left: 1.8%;
+  margin-right: 1.8%;
+  padding: 0;
+  display: inline-block;
+}
+
+.half-column{
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0;
+  display: inline-block;
+}
+
+@media (min-width: 40.19rem){
+  .half-column{
+    width: 70%;
+  }
+  h2 {
+    font-size: 8rem;
+    margin-bottom: -6rem;
+  }
+  h1 {
+    font-size: 7rem;
+  }
+}
+
+@media (min-width: 60rem){
+  .half-column{
+    width: 50%;
+  }
+}
+
+.self-portrait-half {
+  width: 100%;
+  margin-bottom: 1rem;
+  display: inline-block;
+}
+
+/* project page styling */
+
+.project-intro {
+  width: 50%;
+  margin: auto;
+  text-shadow: -2px 4px 10px rgba(11, 21, 22, 0.25);
+}
+
+.content-module {
+  position: relative;
+  margin: 4rem 10% 4rem 10%;
+  padding: 2rem;
+  background-color: rgb(255, 255, 255);
+  border-radius: 0.25rem;
+  box-shadow: -2px 4px 10px rgba(11, 21, 22, 0.25);
+}
+
+.content-module-wide {
+  margin: 4rem 5% 4rem 5%;
+  padding: 2rem;
+  background-color: rgb(255, 255, 255);
+  border-radius: 0.25rem;
+  box-shadow: -2px 4px 10px rgba(11, 21, 22, 0.25);
+}
+
+@media (min-width:47.06rem) {
+  .content-module {
+    margin: 4rem 20% 4rem 20%;
+  }
+}
+
+@media (min-width:65.69rem) {
+  .content-module {
+    margin: 4rem 25% 4rem 25%;
+  }
+}
+
+.photo-grid-box {
+  background-color: #E6E5DD;
+  margin: 0;
+  padding: 1.8%;
+  text-align: center;
+}
+
+.project-photo {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.home-page-text {
+  margin: 0;
+  display: inline-block;
+}
+
+
+@media (min-width: 57.75rem) {
+  .home-page-text {
+    vertical-align: TOP;
+    margin-left: 2rem;
+    margin-right: 1rem;
+  }
+}
+
+@media (min-width: 74rem) {
+  .home-page-text {
+    margin-left: 4rem;
+  }
+}
+
+/* responsive video code from https://benmarshall.me/responsive-iframes/*/
+.intrinsic-container {
+  position: relative;
+  height: 0;
+  overflow: hidden;
+  z-index: 13;
+}
+
+/* 16x9 Aspect Ratio */
+.intrinsic-container-16x9 {
+  padding-bottom: 56.25%;
+}
+
+/* 4x3 Aspect Ratio */
+.intrinsic-container-4x3 {
+  padding-bottom: 75%;
+}
+
+.intrinsic-container iframe {
+  position: absolute;
+  top:0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.project-text {
+  margin: 0;
+}
+
+.project-conclusion-text {
+  margin-right:auto;
+  margin-top: 0;
+  display: inline;
+}
+
+audio {
+  width: 100%;
+}
+
+.audio-label {
+  font-family: 'Roboto';
+  font-weight: 400;
+  font-size: 0.7rem;
+  letter-spacing: 0.1rem;
+  margin-bottom: 0;
+}
