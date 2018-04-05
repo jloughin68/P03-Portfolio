@@ -1,5 +1,6 @@
 
 @import 'normalize';
+@import 'flexbox';
 @import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700');
 @import url('https://fonts.googleapis.com/css?family=Roboto:300,400');
 @import 'fonts';
@@ -346,7 +347,7 @@ section code {
 
 .slider-label {
   font-family: 'Roboto';
-  z-index: 12;
+  z-index: 8;
   font-weight: 400;
   font-size: 0.8rem;
   letter-spacing: 0.1rem;
