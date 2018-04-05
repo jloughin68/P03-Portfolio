@@ -8,9 +8,9 @@
 .background {
   background-image:
   url("../img/background-mountain.jpg");
-  background-size: 120%;
+  background-size: cover;
   background-repeat: no-repeat;
-  background-position: 0rem 0rem;
+  background-position: 0 0rem;
   background-color: #0b0d0e;
   background-attachment: scroll;
   overflow: hidden;
@@ -18,63 +18,63 @@
 
 @media (min-width:  10rem) {
   .background {
-    background-position: 0rem -3rem;
+    background-position: 0 -3rem;
   }
 }
 
 @media (min-width:  15rem) {
   .background {
-    background-position: 0rem -8rem;
+    background-position: 0 -8rem;
   }
 }
 
 @media (min-width:  20rem) {
   .background {
-    background-position: 0rem -13rem;
+    background-position: 0 -13rem;
   }
 }
 
 @media (min-width:  25rem) {
   .background {
-    background-position: 0rem -18rem;
+    background-position: 0 -18rem;
   }
 }
 
 @media (min-width:  30rem) {
   .background {
-    background-position: 0rem -23rem;
+    background-position: 0 -23rem;
   }
 }
 
 @media (min-width:  35rem) {
   .background {
-    background-position: 0rem -28rem;
+    background-position: 0 -28rem;
   }
 }
 
  @media (min-width:  40rem) {
    .background {
-     background-position: 0rem -33rem;
+     background-position: 0 -33rem;
    }
  }
 
 @media (min-width: 45rem) {
   .background {
     background-image: url("../img/background-full.jpg");
-    background-position: -5rem -35rem;
+    background-position: 0 -25rem;
   }
 }
 
 @media (min-width: 50rem) {
   .background {
-    background-position: -5rem -40rem;
+    background-position: 0 -30rem;
   }
 }
 
 @media (min-width: 56.94rem) {
   .background {
     background-position: 0 -35rem;
-    background-size: 100%;
+    background-size: cover;
   }
 }
 
@@ -111,7 +111,7 @@
 .background-paper {
   background-image:
   url("../img/background-paper.jpg");
-  background-size: 100%;
+  background-size: cover;
   background-position: 0 0;
   background-color: #E6E5DD;
   background-attachment: fixed;
