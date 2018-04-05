@@ -1,8 +1,8 @@
 
 @import 'normalize';
-@import 'fonts';
 @import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700');
 @import url('https://fonts.googleapis.com/css?family=Roboto:300,400');
+@import 'fonts';
 
 .background {
   background-image:
@@ -346,6 +346,7 @@ section code {
 
 .slider-label {
   font-family: 'Roboto';
+  z-index: 12;
   font-weight: 400;
   font-size: 0.8rem;
   letter-spacing: 0.1rem;
@@ -393,13 +394,22 @@ figcaption {
   text-align: center;
 }
 
-figure > figcaption {
+.arrow-caption {
+  color: white;
+}
+
+.arrow-label {
   margin-top: 0.2rem;
   color: white;
 }
 
 a {
   text-decoration: none;
+}
+
+.click-enlarge {
+  display: block;
+  position: relative;
 }
 
 /* need to declare this in order for absolute position for contained elements to work: */
@@ -760,19 +770,19 @@ div {
 
 
 .vertical-space-2 {
-  padding: 2%;
+  padding: 2% 0;
 }
 .vertical-space-5 {
-  padding: 5%;
+  padding: 5% 0;
 }
 
 .vertical-space-7 {
-  padding: 10%;
+  padding: 10% 0;
 }
 
 @media (min-width: 40.19rem) {
   .vertical-space-7 {
-    padding: 7%;
+    padding: 7% 0;
   }
   .home-h3 {
     font-size: 1rem;
@@ -782,11 +792,11 @@ div {
 
 
 .vertical-space-10 {
-  padding: 10%;
+  padding: 10% 0;
 }
 
 .vertical-space-12 {
-  padding: 12%;
+  padding: 12% 0;
 }
 
 .nav-icon {

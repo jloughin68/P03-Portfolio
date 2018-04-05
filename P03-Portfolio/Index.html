@@ -7,38 +7,38 @@
     <title>Home</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link href="css/main-dist.css" rel="stylesheet">
+    <link href="css/main.min.css" rel="stylesheet">
 
   </head>
 
   <body>
     <div class="background">
 
-      <header class="box-item-nav">
-        <nav class="nav-box">
-          <a class="header-button-nav" href="#">top</a>
-          <a href="#"><img src="img/home.png" class="nav-icon" alt="icon of a house" aria-hidden="true"></a>
+      <nav class="nav-box">
+        <a class="header-button-nav" href="#">top</a>
+        <a href="#"><img src="img/home.png" class="nav-icon" alt="icon of a house" aria-hidden="true"></a>
 
-          <a class="header-button-nav" href="#projects">work</a>
-          <a href="#projects"><img src="img/projects.png" class="nav-icon" alt="icon of a briefcase" aria-hidden="true"></a>
+        <a class="header-button-nav" href="#projects">work</a>
+        <a href="#projects"><img src="img/projects.png" class="nav-icon" alt="icon of a briefcase" aria-hidden="true"></a>
 
-          <a class="header-button-nav" href="#art">art</a>
-          <a href="#art"><img src="img/art.png" class="nav-icon" alt="icon of art supplies" aria-hidden="true"></a>
+        <a class="header-button-nav" href="#art">art</a>
+        <a href="#art"><img src="img/art.png" class="nav-icon" alt="icon of art supplies" aria-hidden="true"></a>
 
-          <a class="header-button-nav" href="#about">about</a>
-          <a href="#about"><img src="img/about.png" class="nav-icon" alt="icon of a person with long hair" aria-hidden="true"></a>
+        <a class="header-button-nav" href="#about">about</a>
+        <a href="#about"><img src="img/about.png" class="nav-icon" alt="icon of a person with long hair" aria-hidden="true"></a>
 
-          <a class="header-button-nav" href="#contact">contact</a>
-          <a href="#contact"><img src="img/contact.png" class="nav-icon" alt="icon of a sealed envelope" aria-hidden="true"></a>
+        <a class="header-button-nav" href="#contact">contact</a>
+        <a href="#contact"><img src="img/contact.png" class="nav-icon" alt="icon of a sealed envelope" aria-hidden="true"></a>
 
-          <a href="Index.html" class="logo">jl</a>
-        </nav>
-      </header>
+        <a href="Index.html" class="logo">jl</a>
+      </nav>
 
       <div class="vertical-space-7"></div>
 
+      <header>
         <h1 class="text-centered">Jules</h1>
         <h3 class="home-h3 text-centered">artist, designer, storyteller.</h3>
+      </header>
 
       <div class="vertical-space-12"></div>
       <div class="vertical-space-7"></div>
@@ -65,8 +65,15 @@
         <!-- I decided not to put aria-hidden stuff on the sliders or the lightboxes since all content is technically accessible, and no new content appears with the targeted lightboxes -->
 
         <div class="content-module">
-          <img src="img/left-arrow.svg" alt="left arrow" class="slider-arrow-left">
-          <img src="img/right-arrow.svg" alt="right arrow" class="slider-arrow-right">
+          <figure class="slider-arrow-left">
+            <img src="img/left-arrow.svg" alt="left arrow">
+            <figcaption class="arrow-caption">scroll</figcaption>
+          </figure>
+
+          <figure class="slider-arrow-right">
+            <img src="img/right-arrow.svg" alt="left arrow">
+            <figcaption class="arrow-caption">scroll</figcaption>
+          </figure>
           <p class="slider-label">click to enlarge</p>
           <div class="slider">
 
@@ -276,10 +283,7 @@
         <p class="footer-text">Visit my style guide <a href="Styleguide.html" class="in-text-link">here</a>.</p>
         <p class="footer-text"> Copyright &copy;2018 Juliana Loughin  |  All paintings and icons homemade with love. </p>
       </footer>
-
     </div>
-
-  <script src="javascript.js"></script>
 
   </body>
 </html>

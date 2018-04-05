@@ -7,7 +7,7 @@
     <title>Style Guide</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link href="css/main-dist.css" rel="stylesheet">
+    <link href="css/main.min.css" rel="stylesheet">
 
   </head>
 
@@ -17,124 +17,106 @@
       <img class= "perma-trees-left" src="img/front-trees-left.png" alt="trees on left side of the content">
       <img class= "perma-trees-right" src="img/front-trees-right.png" alt="trees on right side of the content">
 
-      <header class="box-item-nav">
-        <nav class="nav-box">
-          <a class="header-button-nav" href="Index.html">home</a>
-          <a href="Index.html"><img src="img/home.png" class="nav-icon" alt="placeholder"></a>
+      <nav class="nav-box">
+        <a class="header-button-nav" href="Index.html">home</a>
+        <a href="Index.html"><img src="img/home.png" class="nav-icon" alt="placeholder"></a>
 
-          <a class="header-button-nav" href="Index.html#projects">projects</a>
-          <a href="Index.html#projects"><img src="img/projects.png" class="nav-icon" alt="placeholder"></a>
+        <a class="header-button-nav" href="Index.html#projects">projects</a>
+        <a href="Index.html#projects"><img src="img/projects.png" class="nav-icon" alt="placeholder"></a>
 
-          <a class="header-button-nav active" href="Index.html#art">art</a>
-          <a href="Index.html#art"><img src="img/art.png" class="nav-icon" alt="placeholder"></a>
+        <a class="header-button-nav active" href="Index.html#art">art</a>
+        <a href="Index.html#art"><img src="img/art.png" class="nav-icon" alt="placeholder"></a>
 
-          <a class="header-button-nav" href="Index.html#about">about</a>
-          <a href="Index.html#about"><img src="img/about.png" class="nav-icon" alt="placeholder"></a>
+        <a class="header-button-nav" href="Index.html#about">about</a>
+        <a href="Index.html#about"><img src="img/about.png" class="nav-icon" alt="placeholder"></a>
 
-          <a class="header-button-nav" href="Index.html#contact">contact</a>
-          <a href="Index.html#contact"><img src="img/contact.png" class="nav-icon" alt="placeholder"></a>
+        <a class="header-button-nav" href="Index.html#contact">contact</a>
+        <a href="Index.html#contact"><img src="img/contact.png" class="nav-icon" alt="placeholder"></a>
 
-          <a href="Index.html" class="logo">jl</a>
-        </nav>
-      </header>
+        <a href="Index.html" class="logo">jl</a>
+      </nav>
 
       <div class="vertical-space-7"></div>
 
-      <div class="text-centered">
-        <h1>Style Guide</h1>
-        <nav>
-          <a href="#interactive_elements" class="button-nav">Interactive Elements</a>
-          <a href="#text_elements" class="button-nav">Text Elements</a>
-          <a href="#combined_elements" class="button-nav">Combined Elements</a>
-        </nav>
-      </div>
-
-
-
-      <!-- INTERACTIVE ELEMENTS SECTION // -->
-      <section id="interactive_elements">
-        <!-- This is exactly the same as the nav button I actually use in my site (header-button-nav), just with colours you can actually see against the white, since header-button-nav will be in the header which is green -->
+      <header>
         <div class="text-centered">
-          <h2>Navigation Button</h2>
+          <h1>Style Guide</h1>
+          <nav>
+            <a href="#interactive_elements" class="button-nav">Interactive Elements</a>
+            <a href="#text_elements" class="button-nav">Text Elements</a>
+            <a href="#combined_elements" class="button-nav">Combined Elements</a>
+          </nav>
         </div>
-        <div class="content-module">
-          <h3>CSS selector:</h3>
-          <ul>
-            <li class="regular-text">.button-nav</p></li>
-          </ul>
-
-          <h3>Sample code:</h3>
-          <code>&lt;a class=&quot;button-nav&quot; href=&quot;#&quot;&gt;nav button&lt;/a&gt;</code>
-
-          <h3>Rendered element:</h3>
-          <a class="button-nav" href="#">nav button</a>
-        </div>
-
-        <div class="text-centered">
-          <h2>In-text link</h2>
-        </div>
-        <div class="content-module">
-          <h3>CSS selector:</h3>
-          <ul>
-            <li class="regular-text">.in-text-link</li>
-          </ul>
-
-          <h3>Sample code:</h3>
-          <code>&lt;a class=&quot;in-text-link&quot; href=&quot;#&quot;&gt;here's the link&lt;/a&gt;</code>
-
-          <h3>Rendered element:</h3>
-          <p class="regular-text">Within a paragraph there will come a point at which there is a link. At that point, it'll say <a class="in-text-link" href="#">here's the link</a> and when you click on it, it'll do something! Who knows what? The possibilities are endless!</p>
-        </div>
+      </header>
 
 
-      <!-- // INTERACTIVE ELEMENTS SECTION -->
+        <!-- INTERACTIVE ELEMENTS SECTION // -->
+        <section id="interactive_elements">
+          <!-- This is exactly the same as the nav button I actually use in my site (header-button-nav), just with colours you can actually see against the white, since header-button-nav will be in the header which is green -->
+          <div class="text-centered">
+            <h2>Navigation Button</h2>
+          </div>
+          <div class="content-module">
+            <h3>CSS selector:</h3>
+            <ul>
+              <li class="regular-text">.button-nav</p></li>
+            </ul>
+
+            <h3>Sample code:</h3>
+            <code>&lt;a class=&quot;button-nav&quot; href=&quot;#&quot;&gt;nav button&lt;/a&gt;</code>
+
+            <h3>Rendered element:</h3>
+            <a class="button-nav" href="#">nav button</a>
+          </div>
+
+          <div class="text-centered">
+            <h2>In-text link</h2>
+          </div>
+          <div class="content-module">
+            <h3>CSS selector:</h3>
+            <ul>
+              <li class="regular-text">.in-text-link</li>
+            </ul>
+
+            <h3>Sample code:</h3>
+            <code>&lt;a class=&quot;in-text-link&quot; href=&quot;#&quot;&gt;here's the link&lt;/a&gt;</code>
+
+            <h3>Rendered element:</h3>
+            <p class="regular-text">Within a paragraph there will come a point at which there is a link. At that point, it'll say <a class="in-text-link" href="#">here's the link</a> and when you click on it, it'll do something! Who knows what? The possibilities are endless!</p>
+          </div>
+
+
+        <!-- // INTERACTIVE ELEMENTS SECTION -->
 
 
 
-      <!-- TEXT ELEMENTS SECTION // -->
-      <section id="text_elements">
+        <!-- TEXT ELEMENTS SECTION // -->
+        <section id="text_elements">
 
-        <div class="text-centered">
-          <h2>Headings</h2>
-        </div>
-        <div class="content-module">
-          <h3>CSS selector:</h3>
-          <ul>
-            <li class="regular-text">h1</li>
-            <li class="regular-text">h2</li>
-            <li class="regular-text">h3</li>
-          </ul>
+          <div class="text-centered">
+            <h2>Headings</h2>
+          </div>
+          <div class="content-module">
+            <h3>CSS selector:</h3>
+            <ul>
+              <li class="regular-text">h1</li>
+              <li class="regular-text">h2</li>
+              <li class="regular-text">h3</li>
+            </ul>
 
-          <h3>Sample code:</h3>
-          <code>&lt;h1&gt;First&lt;/h1&gt;<br> &lt;h2&gt;Second&lt;/h2&gt;<br> &lt;h3&gt;Third&lt;/h3&gt;</code>
+            <h3>Sample code:</h3>
+            <code>&lt;h1&gt;First&lt;/h1&gt;<br> &lt;h2&gt;Second&lt;/h2&gt;<br> &lt;h3&gt;Third&lt;/h3&gt;</code>
 
-          <h3>Rendered element:</h3>
-            <h1>First</h1>
-            <h2>Second</h2>
-            <div class="vertical-space-10"></div>
-            <h3>Third</h3>
-        </div>
-
-
-        <div class="text-centered">
-          <h2>Paragraphs</h2>
-        </div>
-        <div class="content-module">
-          <h3>CSS selector:</h3>
-          <ul>
-            <li class="regular-text">.regular-text</li>
-          </ul>
-
-          <h3>Sample code:</h3>
-          <code>&lt;p&gt;Thestral dirigible plums, Viktor Krum hexed memory charm Animagus Invisibility Cloak three-headed Dog. Half-Blood Prince Invisibility Cloak cauldron cakes, hiya Harry! Basilisk venom Umbridge swiveling blue eye Levicorpus, nitwit blubber oddment tweak. Chasers Winky quills The Boy Who Lived.&lt;/p&gt;</code>
-
-          <h3>Rendered element:</h3>
-            <p class="regular-text">Thestral dirigible plums, Viktor Krum hexed memory charm Animagus Invisibility Cloak three-headed Dog. Half-Blood Prince Invisibility Cloak cauldron cakes, hiya Harry! Basilisk venom Umbridge swiveling blue eye Levicorpus, three-headed nitwit blubber oddment tweak. Chasers Winky quills The Boy Who Lived.</p>
-        </div>
+            <h3>Rendered element:</h3>
+              <h1>First</h1>
+              <h2>Second</h2>
+              <div class="vertical-space-10"></div>
+              <h3>Third</h3>
+          </div>
 
 
           <div class="text-centered">
-            <h2>Bullet Lists</h2>
+            <h2>Paragraphs</h2>
           </div>
           <div class="content-module">
             <h3>CSS selector:</h3>
@@ -143,123 +125,140 @@
             </ul>
 
             <h3>Sample code:</h3>
-            <code>&lt;ul&gt; <br> &lt;li class=&quot;regular-text&quot;&gt;I have a point&lt;/li&gt; <br> &lt;li class=&quot;regular-text&quot;&gt;And another point&lt;/li&gt; <br> &lt;li class=&quot;regular-text&quot;&gt;And yet another point&lt;/li&gt; <br> &lt;/ul&gt;</code>
+            <code>&lt;p&gt;Thestral dirigible plums, Viktor Krum hexed memory charm Animagus Invisibility Cloak three-headed Dog. Half-Blood Prince Invisibility Cloak cauldron cakes, hiya Harry! Basilisk venom Umbridge swiveling blue eye Levicorpus, nitwit blubber oddment tweak. Chasers Winky quills The Boy Who Lived.&lt;/p&gt;</code>
 
             <h3>Rendered element:</h3>
-            <ul>
-              <li class="regular-text">I have a point</li>
-              <li class="regular-text">And another point</li>
-              <li class="regular-text">And yet another point</li>
-            </ul>
+              <p class="regular-text">Thestral dirigible plums, Viktor Krum hexed memory charm Animagus Invisibility Cloak three-headed Dog. Half-Blood Prince Invisibility Cloak cauldron cakes, hiya Harry! Basilisk venom Umbridge swiveling blue eye Levicorpus, three-headed nitwit blubber oddment tweak. Chasers Winky quills The Boy Who Lived.</p>
           </div>
 
-          <div class="text-centered">
-            <h2>Numbered Lists</h2>
-          </div>
-          <div class="content-module">
-            <h3>CSS selector:</h3>
-            <ul>
-              <li class="regular-text">.regular-text</li>
-            </ul>
 
-            <h3>Sample code:</h3>
-            <code>&lt;ol&gt; <br> &lt;li class=&quot;regular-text&quot;&gt;I have a point&lt;/li&gt; <br> &lt;li class=&quot;regular-text&quot;&gt;And a second point&lt;/li&gt; <br> &lt;li class=&quot;regular-text&quot;&gt;And a third even better point&lt;/li&gt; <br>&lt;/ol&gt;</code>
-
-            <h3>Rendered element:</h3>
-            <ol>
-              <li class="regular-text">I have a point</li>
-              <li class="regular-text">And a second point</li>
-              <li class="regular-text">And a third even better point</li>
-            </ol>
-          </div>
-
-      </section>
-      <!-- // TEXT ELEMENTS SECTION -->
-
-
-
-      <!-- COMBINED ELEMENTS SECTION // -->
-      <section id="combined_elements">
-
-        <div class="text-centered">
-          <h2>Main Navigation</h2>
-        </div>
-        <div class="content-module">
-          <h3>CSS selector:</h3>
-          <ul>
-            <li class="regular-text">.nav-box</li>
-            <li class="regular-text">.header-button-nav</li>
-          </ul>
-
-          <h3>Sample code:</h3>
-          <code>&lt;header&gt; <br>&lt;nav class=&quot;nav-box&quot;&gt;<br> &lt;a class=&quot;header-button-nav&quot; href=&quot;Index.html&quot;&gt;home&lt;/a&gt; <br>&lt;a href=&quot;Index.html&quot;&gt;&lt;img src=&quot;img/home.png&quot; class=&quot;nav-icon&quot; alt=&quot;icon of a house&quot; aria-hidden=&quot;true&quot;&gt;&lt;/a&gt; <br> &lt;a class=&quot;header-button-nav&quot; href=&quot;Index.html#projects&quot;&gt;work&lt;/a&gt;<br> &lt;a href=&quot;Index.html#projects&quot;&gt;&lt;img src=&quot;img/projects.png&quot; class=&quot;nav-icon&quot; alt=&quot;icon of a briefcase&quot; aria-hidden=&quot;true&quot;&gt;&lt;/a&gt;<br> &lt;a class=&quot;header-button-nav active&quot; href=&quot;Index.html#art&quot;&gt;art&lt;/a&gt; <br>&lt;a href=&quot;Index.html#art&quot;&gt;&lt;img src=&quot;img/art.png&quot; class=&quot;nav-icon&quot; alt=&quot;icon of art supplies&quot; aria-hidden=&quot;true&quot;&gt;&lt;/a&gt;<br> &lt;a class=&quot;header-button-nav&quot; href=&quot;Index.html#about&quot;&gt;about&lt;/a&gt; <br> &lt;a href=&quot;Index.html#about&quot;&gt;&lt;img src=&quot;img/about.png&quot; class=&quot;nav-icon&quot; alt=&quot;icon of a person with long hair&quot; aria-hidden=&quot;true&quot;&gt;&lt;/a&gt;<br> &lt;a class=&quot;header-button-nav&quot; href=&quot;Index.html#contact&quot;&gt;contact&lt;/a&gt; <br> &lt;a href=&quot;Index.html#contact&quot;&gt;&lt;img src=&quot;img/contact.png&quot; class=&quot;nav-icon&quot; alt=&quot;icon of a sealed envelope&quot; aria-hidden=&quot;true&quot;&gt;&lt;/a&gt; <br> &lt;a href=&quot;Index.html&quot; class=&quot;logo&quot;&gt;jl&lt;/a&gt; <br> &lt;/nav&gt; <br>&lt;/header&gt;</code>
-
-          <h3>Rendered element:</h3>
-          <p class="regular-text">[see top of page] </p>
-        </div>
-
-        <div class="text-centered">
-          <h2>Project Listing</h2>
-        </div>
-        <div class="content-module">
-          <h3>CSS selector:</h3>
-          <ul>
-            <li class="regular-text">.product-listing-box</li>
-            <li class="regular-text">.product-listing</li>
-            <li class="regular-text">.project-listing-title-bottom</li>
-            <li class="regular-text">.project-listing-title-top</li>
-          </ul>
-
-          <h3>Sample code:</h3>
-          <code>&lt;a href=&quot;#&quot; class=&quot;project-listing&quot;&gt; <br> &lt;img src=&quot;img/ribbonbound.jpg&quot; alt=&quot;a ribbon-wrapped wizard&quot;&gt; <br> &lt;h3 class=&quot;project-listing-title-bottom&quot;&gt;ribbonbound&lt;/h3&gt; <br>&lt;/a&gt;</code>
-
-          <h3>Rendered element:</h3>
-
-            <a href="#" class="project-listing box-item-image">
-              <img src="img/ribbonbound.gif" alt="a ribbon-wrapped wizard">
-              <h3 class="project-listing-title">ribbonbound</h3>
-            </a>
-        </div>
-
-
-          <div class="text-centered">
-            <h2>Color Palette</h2>
-          </div>
-          <div class="content-module">
-            <h3>CSS selector:</h3>
+            <div class="text-centered">
+              <h2>Bullet Lists</h2>
+            </div>
+            <div class="content-module">
+              <h3>CSS selector:</h3>
               <ul>
-                <li class="regular-text">.palette</li>
-                <li class="regular-text">.swatch</li>
-                <li class="regular-text">.cream</li>
-                <li class="regular-text">.beige</li>
-                <li class="regular-text">.pink</li>
-                <li class="regular-text">...</li>
+                <li class="regular-text">.regular-text</li>
               </ul>
 
-            <h3>Sample code:</h3>
-            <code>&lt;section class=&quot;palette&quot;&gt; <br> &lt;p class=&quot;swatch cream&quot;&gt;#E6E5DD&lt;/p&gt; <br> &lt;p class=&quot;swatch beige&quot;&gt;#B99785&lt;/p&gt; <br>&lt;p class=&quot;swatch pink&quot;&gt;#B46955&lt;/p&gt;<br> &lt;p class=&quot;swatch red&quot;&gt;#87231A&lt;/p&gt;<br> &lt;p class=&quot;swatch grey-green&quot;&gt;#B1B8A8&lt;/p&gt;<br> &lt;p class=&quot;swatch teal&quot;&gt;#416463&lt;/p&gt; <br>&lt;p class=&quot;swatch navy-grey&quot;&gt;#0B1517&lt;/p&gt;<br> &lt;/section&gt;</code>
+              <h3>Sample code:</h3>
+              <code>&lt;ul&gt; <br> &lt;li class=&quot;regular-text&quot;&gt;I have a point&lt;/li&gt; <br> &lt;li class=&quot;regular-text&quot;&gt;And another point&lt;/li&gt; <br> &lt;li class=&quot;regular-text&quot;&gt;And yet another point&lt;/li&gt; <br> &lt;/ul&gt;</code>
 
-            <h3>Rendered element:</h3>
-            <div class="palette">
-                <p class="swatch cream">#E6E5DD</p>
-                <p class="swatch beige">#B99785</p>
-                <p class="swatch pink">#B46955</p>
-                <p class="swatch red">#87231A</p>
-                <p class="swatch grey-green">#B1B8A8</p>
-                <p class="swatch teal">#416463</p>
-                <p class="swatch navy-grey">#0B1517</p>
+              <h3>Rendered element:</h3>
+              <ul>
+                <li class="regular-text">I have a point</li>
+                <li class="regular-text">And another point</li>
+                <li class="regular-text">And yet another point</li>
+              </ul>
             </div>
-          </div>
+
+            <div class="text-centered">
+              <h2>Numbered Lists</h2>
+            </div>
+            <div class="content-module">
+              <h3>CSS selector:</h3>
+              <ul>
+                <li class="regular-text">.regular-text</li>
+              </ul>
+
+              <h3>Sample code:</h3>
+              <code>&lt;ol&gt; <br> &lt;li class=&quot;regular-text&quot;&gt;I have a point&lt;/li&gt; <br> &lt;li class=&quot;regular-text&quot;&gt;And a second point&lt;/li&gt; <br> &lt;li class=&quot;regular-text&quot;&gt;And a third even better point&lt;/li&gt; <br>&lt;/ol&gt;</code>
+
+              <h3>Rendered element:</h3>
+              <ol>
+                <li class="regular-text">I have a point</li>
+                <li class="regular-text">And a second point</li>
+                <li class="regular-text">And a third even better point</li>
+              </ol>
+            </div>
 
         </section>
+        <!-- // TEXT ELEMENTS SECTION -->
 
-        <footer>
-          <p class="footer-text">visit my portfolio site <a href="Index.html" class="in-text-link">here</a></p>
-        </footer>
 
-    </div>
 
-    <script src="javascript.js"></script>
+        <!-- COMBINED ELEMENTS SECTION // -->
+        <section id="combined_elements">
 
-  </body>
+          <div class="text-centered">
+            <h2>Main Navigation</h2>
+          </div>
+          <div class="content-module">
+            <h3>CSS selector:</h3>
+            <ul>
+              <li class="regular-text">.nav-box</li>
+              <li class="regular-text">.header-button-nav</li>
+            </ul>
+
+            <h3>Sample code:</h3>
+            <code>&lt;header&gt; <br>&lt;nav class=&quot;nav-box&quot;&gt;<br> &lt;a class=&quot;header-button-nav&quot; href=&quot;Index.html&quot;&gt;home&lt;/a&gt; <br>&lt;a href=&quot;Index.html&quot;&gt;&lt;img src=&quot;img/home.png&quot; class=&quot;nav-icon&quot; alt=&quot;icon of a house&quot; aria-hidden=&quot;true&quot;&gt;&lt;/a&gt; <br> &lt;a class=&quot;header-button-nav&quot; href=&quot;Index.html#projects&quot;&gt;work&lt;/a&gt;<br> &lt;a href=&quot;Index.html#projects&quot;&gt;&lt;img src=&quot;img/projects.png&quot; class=&quot;nav-icon&quot; alt=&quot;icon of a briefcase&quot; aria-hidden=&quot;true&quot;&gt;&lt;/a&gt;<br> &lt;a class=&quot;header-button-nav active&quot; href=&quot;Index.html#art&quot;&gt;art&lt;/a&gt; <br>&lt;a href=&quot;Index.html#art&quot;&gt;&lt;img src=&quot;img/art.png&quot; class=&quot;nav-icon&quot; alt=&quot;icon of art supplies&quot; aria-hidden=&quot;true&quot;&gt;&lt;/a&gt;<br> &lt;a class=&quot;header-button-nav&quot; href=&quot;Index.html#about&quot;&gt;about&lt;/a&gt; <br> &lt;a href=&quot;Index.html#about&quot;&gt;&lt;img src=&quot;img/about.png&quot; class=&quot;nav-icon&quot; alt=&quot;icon of a person with long hair&quot; aria-hidden=&quot;true&quot;&gt;&lt;/a&gt;<br> &lt;a class=&quot;header-button-nav&quot; href=&quot;Index.html#contact&quot;&gt;contact&lt;/a&gt; <br> &lt;a href=&quot;Index.html#contact&quot;&gt;&lt;img src=&quot;img/contact.png&quot; class=&quot;nav-icon&quot; alt=&quot;icon of a sealed envelope&quot; aria-hidden=&quot;true&quot;&gt;&lt;/a&gt; <br> &lt;a href=&quot;Index.html&quot; class=&quot;logo&quot;&gt;jl&lt;/a&gt; <br> &lt;/nav&gt; <br>&lt;/header&gt;</code>
+
+            <h3>Rendered element:</h3>
+            <p class="regular-text">[see top of page] </p>
+          </div>
+
+          <div class="text-centered">
+            <h2>Project Listing</h2>
+          </div>
+          <div class="content-module">
+            <h3>CSS selector:</h3>
+            <ul>
+              <li class="regular-text">.product-listing-box</li>
+              <li class="regular-text">.product-listing</li>
+              <li class="regular-text">.project-listing-title-bottom</li>
+              <li class="regular-text">.project-listing-title-top</li>
+            </ul>
+
+            <h3>Sample code:</h3>
+            <code>&lt;a href=&quot;#&quot; class=&quot;project-listing&quot;&gt; <br> &lt;img src=&quot;img/ribbonbound.jpg&quot; alt=&quot;a ribbon-wrapped wizard&quot;&gt; <br> &lt;h3 class=&quot;project-listing-title-bottom&quot;&gt;ribbonbound&lt;/h3&gt; <br>&lt;/a&gt;</code>
+
+            <h3>Rendered element:</h3>
+
+              <a href="#" class="project-listing box-item-image">
+                <img src="img/ribbonbound.gif" alt="a ribbon-wrapped wizard">
+                <h3 class="project-listing-title">ribbonbound</h3>
+              </a>
+          </div>
+
+
+            <div class="text-centered">
+              <h2>Color Palette</h2>
+            </div>
+            <div class="content-module">
+              <h3>CSS selector:</h3>
+                <ul>
+                  <li class="regular-text">.palette</li>
+                  <li class="regular-text">.swatch</li>
+                  <li class="regular-text">.cream</li>
+                  <li class="regular-text">.beige</li>
+                  <li class="regular-text">.pink</li>
+                  <li class="regular-text">...</li>
+                </ul>
+
+              <h3>Sample code:</h3>
+              <code>&lt;section class=&quot;palette&quot;&gt; <br> &lt;p class=&quot;swatch cream&quot;&gt;#E6E5DD&lt;/p&gt; <br> &lt;p class=&quot;swatch beige&quot;&gt;#B99785&lt;/p&gt; <br>&lt;p class=&quot;swatch pink&quot;&gt;#B46955&lt;/p&gt;<br> &lt;p class=&quot;swatch red&quot;&gt;#87231A&lt;/p&gt;<br> &lt;p class=&quot;swatch grey-green&quot;&gt;#B1B8A8&lt;/p&gt;<br> &lt;p class=&quot;swatch teal&quot;&gt;#416463&lt;/p&gt; <br>&lt;p class=&quot;swatch navy-grey&quot;&gt;#0B1517&lt;/p&gt;<br> &lt;/section&gt;</code>
+
+              <h3>Rendered element:</h3>
+              <div class="palette">
+                  <p class="swatch cream">#E6E5DD</p>
+                  <p class="swatch beige">#B99785</p>
+                  <p class="swatch pink">#B46955</p>
+                  <p class="swatch red">#87231A</p>
+                  <p class="swatch grey-green">#B1B8A8</p>
+                  <p class="swatch teal">#416463</p>
+                  <p class="swatch navy-grey">#0B1517</p>
+              </div>
+            </div>
+
+          </section>
+
+          <footer>
+            <p class="footer-text">visit my portfolio site <a href="Index.html" class="in-text-link">here</a></p>
+          </footer>
+
+      </div>
+
+      <script src="javascript.js"></script>
+
+    </body>
 </html>
